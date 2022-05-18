@@ -7,6 +7,13 @@ Welcome to the IBM Cloud Satellite sales enablement demonstration.  There are 4 
 
 Each of these sections has detailed steps for demonstrating IBM Cloud Satellite. Click on each section name in the left hand navigation bar to expand the section.
 
+-------
+iframe test
+
+<iframe width=700, height=500 frameBorder=0 src="includes/index.html"></iframe>
+
+------
+
 In Part 1 and Part 2, you will see how the demonstration environment was built and how you can perform a "baking show" type of demonstration using the IBM Cloud Portal or videos made available in this demonstration script. You will not actually be deploying a new Satellite Location or Red Hat OpenShift on IBM Cloud cluster, as these activities take a significant amount of time and money. In Part 1, you will also learn how to use the IBM Cloud Shell and IBM Cloud Satellite command line interfaces (CLI). It is important to complete the CLI steps as the activities you will perform in Part 3 are dependent on them.  In Part 3, you will use the IBM Cloud Portal to deploy a cloud native application. This section provides a compelling demonstration to potential clients. Finally in Part 4, learn how to prepare for a client demonstration as well as the Stand and Deliver that is required to complete the IBM Cloud Satellite Level 3 learning plan.
 
 !!! important
