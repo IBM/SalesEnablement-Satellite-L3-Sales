@@ -69,9 +69,6 @@ plugins:
     - mkdocs-video
     - macros
 
-extra:
-  generator: false
-
 markdown_extensions:
   - sane_lists
   - pymdownx.details
@@ -85,6 +82,7 @@ markdown_extensions:
   - attr_list
 
 extra:
+  generator: false
   learningplan:
     name: "IBM Cloud Satellite Sales Level 3"
     url: "https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7"
