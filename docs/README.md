@@ -24,14 +24,14 @@ Create IBM Cloud Satellite OpenShift Cluster
 -------
 Add Nodes to IBM Cloud Satellite OpenShift Cluster
 <div>
-   <iframe src="./includes/ROKS-AWS-add-nodes/index.html"></iframe>
+   <iframe src="/includes/ROKS-AWS-add-nodes/index.html"></iframe>
 </div>
 ------
 
 -------
 Create Red Hat OpenShift on IBM Cloud Cluster
 <div>
-   <iframe src="../includes/IBMROKS-create/index.html"></iframe>
+   <iframe src="/includes/IBMROKS-create/index.html"></iframe>
 </div>
 ------
 
