@@ -10,49 +10,49 @@ Each of these sections has detailed steps for demonstrating IBM Cloud Satellite.
 -------
 Create IBM Cloud Satellite Location
 <div>
-   <iframe src="../includes/SatLocationCreation/index.html"></iframe>
+   <iframe src="includes/SatLocationCreation/index.html"></iframe>
 </div>
 ------
 
 -------
 Create IBM Cloud Satellite OpenShift Cluster
 <div>
-   <iframe src="../includes/ROKS-AWS-create-3node/index.html"></iframe>
+   <iframe src="includes/ROKS-AWS-create-3node/index.html"></iframe>
 </div>
 ------
 
 -------
 Add Nodes to IBM Cloud Satellite OpenShift Cluster
 <div>
-   <iframe src="../includes/ROKS-AWS-add-nodes/index.html"></iframe>
+   <iframe src="includes/ROKS-AWS-add-nodes/index.html"></iframe>
 </div>
 ------
 
 -------
 Create Red Hat OpenShift on IBM Cloud Cluster
 <div>
-   <iframe src="../includes/IBMROKS-create/index.html"></iframe>
+   <iframe src="includes/IBMROKS-create/index.html"></iframe>
 </div>
 ------
 
 -------
 Register Red Hat OpenShift on IBM Cloud Cluster with IBM Cloud Satellite
 <div>
-   <iframe src="../includes/registerIBMROKScluster/index.html"></iframe>
+   <iframe src="includes/registerIBMROKScluster/index.html"></iframe>
 </div>
 ------
 
 -------
 Create IBM Cloud Satellite Cluster Groups
 <div>
-   <iframe src="../includes/createClusterGroups/index.html"></iframe>
+   <iframe src="includes/createClusterGroups/index.html"></iframe>
 </div>
 ------
 
 -------
 Create IBM Cloud Satellite Configuration
 <div>
-   <iframe src="../includes/createConfig/index.html"></iframe>
+   <iframe src="includes/createConfig/index.html"></iframe>
 </div>
 ------
 
