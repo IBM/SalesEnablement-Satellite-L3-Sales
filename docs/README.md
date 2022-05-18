@@ -10,7 +10,7 @@ Each of these sections has detailed steps for demonstrating IBM Cloud Satellite.
 -------
 iframe test
 
-
+<iframe width=700, height=500 frameBorder=0 src="../includes/index.html"></iframe>
 
 ------
 
