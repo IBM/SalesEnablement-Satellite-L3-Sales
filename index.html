@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#welcome-to-mkdocs" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Home
             
           </span>
         </div>
@@ -205,11 +200,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="README.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
+      
     </li>
   
 
@@ -735,67 +738,59 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+  <h1>Home</h1>
+
+<p>Welcome to the IBM Cloud Satellite sales enablement demonstration.  There are 4 parts to this demonstration as seen in the left hand navigation:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Part 1 - IBM Cloud Satellite overview</li>
+<li>Part 2 - Deploy an IBM Cloud Satellite enabled service</li>
+<li>Part 3 - Deploy an OpenShift application</li>
+<li>Part 4 - Preparing for a client demonstration</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<p>Each of these sections has detailed steps for demonstrating IBM Cloud Satellite. Click on each section name in the left hand navigation bar to expand the section.</p>
+<hr />
+<p>iframe test</p>
+<iframe width=700, height=500 frameBorder=0 src="includes/index.html"></iframe>
+
+<hr />
+<p>In Part 1 and Part 2, you will see how the demonstration environment was built and how you can perform a "baking show" type of demonstration using the IBM Cloud Portal or videos made available in this demonstration script. You will not actually be deploying a new Satellite Location or Red Hat OpenShift on IBM Cloud cluster, as these activities take a significant amount of time and money. In Part 1, you will also learn how to use the IBM Cloud Shell and IBM Cloud Satellite command line interfaces (CLI). It is important to complete the CLI steps as the activities you will perform in Part 3 are dependent on them.  In Part 3, you will use the IBM Cloud Portal to deploy a cloud native application. This section provides a compelling demonstration to potential clients. Finally in Part 4, learn how to prepare for a client demonstration as well as the Stand and Deliver that is required to complete the IBM Cloud Satellite Level 3 learning plan.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>It is important to complete each part of the demonstration to gain a full understanding of how to best demonstrate IBM Cloud Satellite.  Some later sections</p>
+</div>
+<p>To complete your IBM Cloud Satellite Sales Level 3 training, you must complete each of the sections. When done, return to the Your Learning plan (<a href="https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7" target="_blank">https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7</a>), and mark this activity complete.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note, you can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for customer demonstrations. In most cases, depending on your audience, the <strong>Deploy an OpenShift application</strong> section will be most appropriate for customer demonstrations.</p>
+</div>
+<p>You can also leverage the IBM Cloud Satellite collection <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">here</a> for longer client demonstrations or proof-of-concepts. Be aware, additional provisioning time and manual configurations are required.  Refer to the documentation in the collection.</p>
+<p><strong>Helpful tips for using this demonstration environment</strong></p>
+<p>This demonstration script is organized in parts and chapters. Most chapters contain numbered steps, which are typically actions that you will perform.</p>
+<p>Throughout the lab, you will see images that are examples of what you should be seeing during the step. In some instances, you will see the following styles of highlighting in those images:</p>
+<ul>
+<li>Action highlight box: Illustrates where you should click,  enter, or select an item:</li>
+</ul>
+<p><img alt="" src="_attachments/ClickActionRectangle.png" /></p>
+<ul>
+<li>
+<p>Path/explore highlight box: Illustrates one of two things:</p>
+</li>
+<li>
+<p>the path to follow to get to a specific location in the user interface</p>
+</li>
+<li>areas to explore on your own</li>
+</ul>
+<p><img alt="" src="_attachments/PathExploreHighlight.png" /></p>
+<ul>
+<li>Copy to clipboard box: Text that is copied to your clipboard. Click the copy icon (highlighted below) and then paste using your operating systems paste function, for example, entering <span class="keys"><kbd class="key-control">Ctrl</kbd></span><strong>+v</strong>, <span class="keys"><kbd class="key-command">Cmd</kbd></span><strong>+v</strong>, or right click and select paste.</li>
+</ul>
+<p><img alt="" src="_attachments/Usage-Clipboard.png" /></p>
 
               
             </article>
@@ -810,6 +805,26 @@ docs/
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="environment/01.01%20Introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Introduction
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
