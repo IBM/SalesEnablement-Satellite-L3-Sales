@@ -1,4 +1,4 @@
-Welcome to the IBM Cloud Satellite sales enablement demonstration.  There are 4 parts to this demonstration as seen in the left hand navigation:
+Welcome to the IBM Cloud Satellite Technology Sales Enablement Level 3 learning plan demonstration.  There are 4 parts to this demonstration as seen in the left hand navigation:
 
  - Part 1 - IBM Cloud Satellite overview
  - Part 2 - Deploy an IBM Cloud Satellite enabled service
@@ -7,15 +7,17 @@ Welcome to the IBM Cloud Satellite sales enablement demonstration.  There are 4 
 
 Each of these sections has detailed steps for demonstrating IBM Cloud Satellite. Click on each section name in the left hand navigation bar to expand the section.
 
-In Part 1 and Part 2, you will see how the demonstration environment was built and how you can perform a "baking show" type of demonstration using the IBM Cloud Portal or videos made available in this demonstration script. You will not actually be deploying a new Satellite Location or Red Hat OpenShift on IBM Cloud cluster, as these activities take a significant amount of time and money. In Part 1, you will also learn how to use the IBM Cloud Shell and IBM Cloud Satellite command line interfaces (CLI). It is important to complete the CLI steps as the activities you will perform in Part 3 are dependent on them.  In Part 3, you will use the IBM Cloud Portal to deploy a cloud native application. This section provides a compelling demonstration to potential clients. Finally in Part 4, learn how to prepare for a client demonstration as well as the Stand and Deliver that is required to complete the IBM Cloud Satellite Level 3 learning plan.
+In Part 1 and Part 2, you will see how the demonstration environment was built and how you can perform a "baking show" type of demonstration using the IBM Cloud Portal, click-thru demos, or videos made available in this demonstration script. Be aware, you will not actually be deploying a new Satellite Location or Red Hat OpenShift on IBM Cloud cluster, as these activities take a significant amount of time and resources (money). In Part 1, you will also learn how to use the IBM Cloud Shell and IBM Cloud Satellite command line interfaces (CLI).
 
-!!! important
-    It is important to complete each part of the demonstration to gain a full understanding of how to best demonstrate IBM Cloud Satellite.  Some later sections
+!!! note "Important"
+    It is important to complete the CLI steps as the activities you will perform in Part 3 are dependent on them.
+
+In Part 3, you will use the IBM Cloud Portal to complete the deployment of a cloud native application. This section provides a compelling demonstration to potential clients. Finally in Part 4, learn how to prepare for a client demonstration as well as the Stand and Deliver that is required to complete the IBM Cloud Satellite Level 3 learning plan.
 
 To complete your {{ learningplan.name }} training, you must complete each of the sections. When done, return to the Your Learning plan (<a href="{{ learningplan.url }}" target="_blank">{{ learningplan.url }}</a>), and mark this activity complete.
 
 !!! note
-    Note, you can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for customer demonstrations. In most cases, depending on your audience, the **Deploy an OpenShift application** section will be most appropriate for customer demonstrations.
+    Note, you can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for customer demonstrations. In most cases, depending on your audience, the **Deploy an OpenShift application** section will be most appropriate for customer demonstrations.   The environment that you will utilizing is **shared** with other users of this demonstration. Your access will be restricted to a single **project** (also known as a **namespace**) in a OpenShift cluster deployed to an IBM Cloud Satellite location in AWS and an OpenShift cluster in IBM Cloud.
 
 You can also leverage the IBM Cloud Satellite collection <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">here</a> for longer client demonstrations or proof-of-concepts. Be aware, additional provisioning time and manual configurations are required.  Refer to the documentation in the collection.
 
@@ -39,3 +41,15 @@ Throughout the lab, you will see images that are examples of what you should be 
 - Copy to clipboard box: Text that is copied to your clipboard. Click the copy icon (highlighted below) and then paste using your operating systems paste function, for example, entering ++ctrl++**+v**, ++cmd++**+v**, or right click and select paste.
 
 ![](_attachments/Usage-Clipboard.png)
+
+Additionally, there are several "click-thru" demonstrations.  These will appear like the static image below.
+
+![](_attachments/ClickThruStartPage.png)
+
+It is recommended you open the "click-thru" demonstration in a new browser window in full screen mode.  The methods to do this depends on the browser you are using:
+
+- Firefox: right click on the image, from the context menu that pops up, select "This Frame -> Open Frame in New Window"
+- Safari: right click on the image, from the context menu that pops up, select "Open Frame in New Window"
+- Chrome: right click on the white boarder of the image, from the context menu that pops up, select "View Frame Source", remove the string "view-source" from the new tab's URL
+
+Next, click the play button ![](_attachments/ClickThruPlayButton.png) in the middle of the screen. Then, simply follow the steps in the demonstration guide.  If at any point you are unsure where to click, simply click anywhere on the screen and a highlight box will appear showing where to click next.
