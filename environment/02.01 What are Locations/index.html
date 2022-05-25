@@ -295,36 +295,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../02.03%20Demonstrate%3A%20How%20to%20provision%20a%20Location/" class="md-nav__link">
-        Demonstrate: How to provision a Location
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03.01%20What%20are%20Links/" class="md-nav__link">
+      <a href="../03.01 What are Links.md" class="md-nav__link">
         What are Links
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../04.01%20Using%20the%20IBM%20Cloud%20command%20line%20interfaces%20%28CLIs%29/" class="md-nav__link">
-        Using the IBM Cloud command line interfaces (CLIs)
       </a>
     </li>
   
@@ -415,20 +387,6 @@
     <li class="md-nav__item">
       <a href="../../deploy-sat-enabled-services/03.01%20Watch%3A%20Deploy%20ROKS%20to%20Sat/" class="md-nav__link">
         Watch: Deploying Red Hat OpenShift to an IBM Cloud Satellite Location
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../deploy-sat-enabled-services/04.01%20Demonstrate%3A%20Provision%20ROKS%20to%20Sat/" class="md-nav__link">
-        Demonstrate: How to deploy Red Hat OpenShift to an IBM Cloud Satellite Location
       </a>
     </li>
   
@@ -748,16 +706,15 @@
 
   <h1>What are IBM Cloud Satellite Locations</h1>
 
-<p>A Satellite Location is a representation of an environment in your infrastructure provider, such as an on-premises data center or public cloud, that you want to bring IBM Cloud services to so that you can run workloads in your own environment.</p>
-<p>Creating a Satellite Location can be achieved through the IBM Cloud Portal, via the IBM Cloud Satellite command line interfaces or APIs. You create the location based off at least three separate zones of your infrastructure environment and attach host machines from across these zones in your infrastructure to the location. For other public cloud providers, IBM Cloud Satellite provides automation via <a href="https://cloud.ibm.com/docs/schematics?topic=schematics-about-schematics" target="_blank">IBM Cloud Schematics</a> to setup the Location. For on-premises deployments, scripts are provided that will need to be run on the target host machines.</p>
-<p>You can directly access the Satellite Locations in IBM Cloud Portal through this link: <a href="https://cloud.ibm.com/satellite/locations" target="_blank">https://cloud.ibm.com/satellite/locations</a> Below is a screen capture of the IBM Cloud Portal Satellite Locations page with a single Location defined. <strong>Note:</strong> the physical location of the Satellite Location is not an attribute of the Location. You should reflect the physical location in the Satellite Location name.</p>
+<p>A Satellite Location is a representation of an environment in your choice of infrastructure such as an on-premises data center or public cloud.</p>
+<p>Creating a Satellite Location can be achieved through the IBM Cloud Portal, via the IBM Cloud Satellite command line interfaces or APIs. You create the location using at least three separate network zones in your infrastructure environment and attach host machines  across these zones to the Satellite Location. For other public cloud providers, IBM Cloud Satellite provides automation via <a href="https://cloud.ibm.com/docs/schematics?topic=schematics-about-schematics" target="_blank">IBM Cloud Schematics</a> to setup the Location. For on-premises deployments, scripts are provided that will need to be executed on each of the target host machines.</p>
+<p>You can directly access the Satellite Locations in IBM Cloud Portal through this link: <a href="https://cloud.ibm.com/satellite/locations" target="_blank">https://cloud.ibm.com/satellite/locations</a> Below is a screen capture of the IBM Cloud Portal Satellite Locations page with a single Location defined. <strong>Note:</strong> the physical location of the Satellite Location is not an attribute of the Location. You should reflect the physical location in the Satellite Location name or tags.</p>
 <p><img alt="" src="../_attachments/SatelliteLocations.png" /></p>
 <p>To learn more about Satellite Locations, refer to the Satellite Location product documentation: <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-locations" target="_blank">https://cloud.ibm.com/docs/satellite?topic=satellite-locations</a>.</p>
 <p><strong>Note:</strong> there are many requirements associated with creating a Satellite Location including:</p>
 <ul>
 <li>minimum host requirements</li>
 <li>network latency between Satellite Location hosts and IBM Cloud data centers</li>
-<li>and others.</li>
 </ul>
 
               

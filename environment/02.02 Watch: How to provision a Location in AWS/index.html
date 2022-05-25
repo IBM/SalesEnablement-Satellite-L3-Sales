@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#video-demonstration" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -279,6 +284,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Watch: How to provision a Location in AWS
@@ -295,36 +302,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../02.03%20Demonstrate%3A%20How%20to%20provision%20a%20Location/" class="md-nav__link">
-        Demonstrate: How to provision a Location
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03.01%20What%20are%20Links/" class="md-nav__link">
+      <a href="../03.01 What are Links.md" class="md-nav__link">
         What are Links
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../04.01%20Using%20the%20IBM%20Cloud%20command%20line%20interfaces%20%28CLIs%29/" class="md-nav__link">
-        Using the IBM Cloud command line interfaces (CLIs)
       </a>
     </li>
   
@@ -415,20 +394,6 @@
     <li class="md-nav__item">
       <a href="../../deploy-sat-enabled-services/03.01%20Watch%3A%20Deploy%20ROKS%20to%20Sat/" class="md-nav__link">
         Watch: Deploying Red Hat OpenShift to an IBM Cloud Satellite Location
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../deploy-sat-enabled-services/04.01%20Demonstrate%3A%20Provision%20ROKS%20to%20Sat/" class="md-nav__link">
-        Demonstrate: How to deploy Red Hat OpenShift to an IBM Cloud Satellite Location
       </a>
     </li>
   
@@ -740,24 +705,165 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-  <h1>Watch: How to provision a Location in AWS</h1>
-
-<p>This video shows the provisioning of an IBM Cloud Satellite Location in AWS. The video has been edited to minimize the viewing time and does not reflect the actual provisioning time of a Satellite Location. The actual provisioning time (from clicking "Create location" to the Location being ready) will vary. When this video was created, it took approximately 25 minutes for the 6 hosts to be provisioned in AWS and configured as a Satellite Location.</p>
-<hr />
-<p>Create IBM Cloud Satellite Location</p>
-<div>
-   <iframe src="../../includes/SatLocationCreation/index.html"></iframe>
-</div>
-<hr />
+<p>In this chapter you will be presented with both a video and a "click-thru" demonstration that shows an IBM Cloud Satellite Location being created in AWS.  You are strongly encouraged to watch the video first.  Then execute the click-thru demonstration and think about what you would say during while demonstrating each step to a client.</p>
+<h1 id="video-demonstration">Video demonstration</h1>
+<p>The video below shows the provisioning of an IBM Cloud Satellite Location in AWS. The video has been edited to minimize the viewing time and does not reflect the actual provisioning time of a Satellite Location. The actual provisioning time (from clicking "Create location" to the Location being ready) will vary. When this video was created, it took approximately 25 minutes for the 6 hosts to be provisioned in AWS and configured as a Satellite Location.</p>
 <p>Use this video to understand the talking points you can use with a client when describing the provisioning process.</p>
 <p><iframe src="../_videos/IBMCloudSatellite-Seller-L3-ProvisionLocation-final.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></p>
 <p><strong>Note:</strong> If the video appears blurry, click the fullscreen <img alt="" src="../_attachments/FullScreenVideo.png" /> or <img alt="" src="../_attachments/FullScreenVideo3.png" /> icon.</p>
+<h1 id="click-thru-demonstration">Click-thru demonstration</h1>
+<p>Now, give it a try.  Use the click-thru script below to step thru the demonstration. Now would be a great time to practice what you would say to a client if you were demonstrating the provisioning process. IBM sellers will need to do this as part of your Stand and Deliver to complete the IBM Cloud Satellite Level 3 badge.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are not sure where to click, simply click anywhere on the screen and the spot to click next will be highlighted.</p>
+</div>
+<ol>
+<li>Click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png" /> to begin the demonstration.</li>
+</ol>
+<div>
+   <iframe src="../../includes/SatLocationCreation/index.html" height="600" width="1350"></iframe>
+</div>
+
+<ol start="2">
+<li>Click the IBM Cloud hamburger menu icon <img alt="" src="_attachments/HambugerMenu.png" />.</li>
+<li>Click <strong>Satellite</strong>.</li>
+<li>Click <strong>Overview</strong>.</li>
+<li>Click <strong>Create a Satellite Location +</strong>.</li>
+<li>Click the <strong>AWS Quick Start</strong> tile.</li>
+<li>Click in the <strong>AWS access key ID</strong> entry field.</li>
+</ol>
+<p>Note: the access key will automatically be entered. The AWS keys are not provided as part of this demonstration to keep it secured so it the environment can be shared by others.</p>
+<ol start="8">
+<li>Click in the <strong>AWS secret access key</strong> entry field.</li>
+<li>Click <strong>Fetch options from AWS</strong>.</li>
+<li>Click the <strong>Edit</strong> icon for the <strong>AWS environment</strong> section.</li>
+<li>Click the <strong>us-east-2 - US East (Ohio)</strong> option.</li>
+<li>Click <strong>Done editing</strong>.</li>
+<li>Click the <strong>Edit</strong> icon for the <strong>AWS EC2 instances</strong> section.</li>
+<li>Click the <strong>m5d.xlarge</strong> selection under <strong>Host type</strong>.</li>
+<li>Click the <strong>m5d.2xlarge</strong> option.</li>
+<li>click the <strong>+</strong> button for the <strong>Service hosts</strong> to increment the number of hosts to be provisioned.</li>
+<li>Click <strong>Done editing</strong>.</li>
+<li>Click the <strong>Edit</strong> icon for the <strong>Satellite Location</strong> section.</li>
+<li>Click in the <strong>Name</strong> entry field.</li>
+<li>Click the <strong>Resource group</strong> drop down menu.</li>
+<li>Click the <strong>satellite-dedicated</strong> option.</li>
+<li>Click in the <strong>Description</strong> entry field.</li>
+<li>Click <strong>Done editing</strong>.</li>
+<li>Click <strong>Create location</strong>.</li>
+</ol>
+<p>At this point the screen will refresh several times. The actual provisioning process takes approximately 30 minutes to complete.</p>
+<ol start="25">
+<li>Click the <strong>Overview</strong> option in the left pane.</li>
+<li>Click the <strong>Hosts</strong> option in the left pane.</li>
+<li>Click the <strong>Cluster</strong> heading in the table of hosts.</li>
+<li>Click the <strong>Overview</strong> option in the left pane.</li>
+</ol>
+<h1 id="practicing-for-a-client-demonstration">Practicing for a client demonstration</h1>
+<p>There are several approaches you can take in doing an actual demonstration of the provisioning process of a Satellite Location:</p>
+<ol>
+<li>
+<p>Play the above video. It includes both narration and annotations.</p>
+</li>
+<li>
+<p>Use the the above video and turn of the audio and provide your own narration to the video. You will want to pause the video at appropriate locations based upon your narration and any questions your client may have.</p>
+</li>
+<li>
+<p>Use the click-thru demonstration. Don't try to hide the fact this is a recorded demonstration, rather explain you are using it respect of the clients time as actually provisioning the environment takes about 30 minutes.</p>
+</li>
+<li>
+<p>Alternatively, you could also do this demonstration using the IBM Cloud portal up to the point of clicking the "Create location" button. Then switch to the location view of an already provisioned location and describe what took place during the provisioning process. This "baking show" approach shows all the steps, but avoids the delays that would be required to perform the provisioning of resources.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In this environment, you will not have the AWS credentials to input in the portal to provision an AWS Location. For this type of demo, you can use the "On-premises &amp; edge" location template instead of the AWS template and describe the differences based on what you saw in the provisioning video.</p>
+</div>
+<p>The steps below can be used as a guide for this style of demonstration:</p>
+<ol>
+<li>Launch the IBM Cloud portal: <a href="https://cloud.ibm.com/satellite/overview" target="_blank">https://cloud.ibm.com/satellite/overview</a>.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The IBM Cloud Portal will be opened in a new browser tab. You need to switch between this tab and the new tab to accomplish many of the tasks. You may want to open the new tab in a new window and display both browser windows at the same time. You may need to disable pop-up blockers if you do not see the new tab. Also, Firefox and Safari browsers are recommended as the image quality of screen captures when viewed in Chrome are sub-optimum.</p>
+</div>
+<ol start="2">
+<li>Change from your IBM Cloud account to the demonstration IBM Cloud account: <strong>2435442 - ITZ - Satellite</strong>*.</li>
+</ol>
+<p><img alt="" src="../_attachments/ChangeAccounts-2-a-gif.gif" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your browser window is narrow, you may see this icon: <img alt="" src="../_attachments/SwitchAccountsIcon.png" /> instead of the current account name as shown in the screen capture above. If you do not see the 2435442 - ITZ - Satellite listed, verify you accepted the invitation from IBM Cloud to join the account and that your IBM Technology Zone environment is active.</p>
+</div>
+<ol start="3">
+<li>Click <strong>Create a Satellite Location</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/SatelliteOverview.png" /></p>
+<ol start="4">
+<li>Describe the <strong>Location templates</strong> page.</li>
+</ol>
+<p><img alt="" src="../_attachments/LocationTemplates.png" /></p>
+<p>Sample dialog: IBM Cloud Satellite Locations can be anywhere. IBM provides templates for several public cloud providers like AWS, Microsoft, and Google. The public cloud provider templates automate the provisioning of the remote compute, memory, and storage resources. Once the servers are provisioned, the automation deploys the IBM Cloud Satellite control plane software, configures the environment, and puts it under the management of IBM Cloud site reliability engineers (SREs).</p>
+<ol start="5">
+<li>Click the <strong>On-premises &amp; edge</strong> tile.</li>
+<li>Click the <strong>Edit</strong> <img alt="" src="../_attachments/PencilIcon.png" /> link.</li>
+</ol>
+<p><img alt="" src="../_attachments/OnPremTemplateEdit.png" /></p>
+<p>Sample dialog: For on-premises deployments or to other public cloud providers, the process has a few more manual steps. You will want to provide a descriptive name and any tags to better identify the Location. You will also need to select the <strong>Managed from</strong> location. This is the IBM Cloud data center that will be used to manage the Satellite Location. You will want to select the IBM Cloud data center that is nearest to your Satellite Location as there are latency requirements. In addition, you can specify the names of availability zones within your Satellite Location. Ideally, you will provision servers in separate physical zones to provide high availability to your cloud services. And finally, you will need to provide an IBM Cloud Object Storage instance that will be used for backups of the IBM Cloud Satellite control plane. Once that is complete, you click "Create location". This will create a script that you will then need to download, install, and run on each of the servers in the Satellite Location. The script will download the IBM Cloud Satellite control plane software, install, configure, and put the Satellite Location under IBM's control.</p>
+<ol start="7">
+<li>Click the <strong>Locations</strong> link at top left of screen.</li>
+</ol>
+<p><img alt="" src="../_attachments/LocationsLink.png" /></p>
+<p>Sample dialog: Once the Satellite Location is fully deployed, you can access the details of the Location. Here you see the current Satellite Locations that have been deployed, their state, and additional information. Let us look at the details of one of these.</p>
+<ol start="8">
+<li>Click <strong>yl-l3-aws</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/SatelliteLocations2.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The actual details may differ from the screen capture above. You will want to adjust your dialog to what you see.</p>
+</div>
+<p><img alt="" src="../_attachments/LocationOverview.png" /></p>
+<p>Sample dialog: Here we see the details and status of our Satellite Location. Notice we have 12 hosts at this Location, and they are all currently in the "assigned" state. Typically, when a Satellite Location is first provisioned, you will see 3 hosts assigned and the others in the unassigned state. The first 3 hosts are used for the IBM Cloud Satellite control plane. Additional hosts are used to deploy IBM Cloud Services like managed Red Hat OpenShift or IBM Cloud Databases.</p>
+<ol start="9">
+<li>Click <strong>Hosts</strong>.</li>
+</ol>
+<p>Sort the table by clicking the <strong>Cluster</strong> menu item in the table header.</p>
+<p><img alt="" src="../_attachments/LocationHosts.png" /></p>
+<p>Sample dialog: Here we see the details for each host that has been deployed at our Satellite Location. Notice the <strong>Status</strong> and <strong>Availability</strong> fields.  In this Location, we see that we have our 3 Control plane hosts and the other 9 are used by a Red Hat OpenShift cluster. These 9 hosts are the worker nodes in our Red Hat OpenShift cluster.</p>
+<ol start="10">
+<li>Click the <strong>Attach host</strong> button.</li>
+</ol>
+<p><img alt="" src="../_attachments/LocationAttachHost.png" /></p>
+<p>Sample dialog: If we want to add <strong>additional</strong> hosts to the Satellite Location, we can do so by going here and specifying the tags we want to use to label the host and then downloading the configuration script. At this time, there is not automation for adding <strong>additional</strong> hosts to an existing Location, so we will need to provision the hardware, download the configuration script, and run the script. Once complete, the host will be moved under IBM management and appear as a new host at our Location in a "unassigned" state.</p>
+<ol start="11">
+<li>Click <strong>Cancel</strong>.</li>
+</ol>
+<p>Sample dialog: That is a brief overview of how to provision an IBM Cloud Satellite Location. We will cover services, link endpoints, and other IBM Cloud Satellite capabilities later. Any questions?</p>
 
               
             </article>
@@ -792,13 +898,13 @@
       
       
         
-        <a href="../02.03%20Demonstrate%3A%20How%20to%20provision%20a%20Location/" class="md-footer__link md-footer__link--next" aria-label="Next: Demonstrate: How to provision a Location" rel="next">
+        <a href="../05.01%20Next%20steps/" class="md-footer__link md-footer__link--next" aria-label="Next: Next steps" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Demonstrate: How to provision a Location
+              Next steps
             </div>
           </div>
           <div class="md-footer__button md-icon">
