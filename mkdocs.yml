@@ -17,15 +17,12 @@ nav:
     - 'Introduction': 'environment/01.01 Introduction.md'
     - 'What are IBM Cloud Satellite Locations': 'environment/02.01 What are Locations.md'
     - 'Watch: How to provision a Location in AWS': 'environment/02.02 Watch: How to provision a Location in AWS.md'
-    - 'Demonstrate: How to provision a Location': 'environment/02.03 Demonstrate: How to provision a Location.md'
     - 'What are Links': 'environment/03.01 What are Links.md'
-    - 'Using the IBM Cloud command line interfaces (CLIs)': 'environment/04.01 Using the IBM Cloud command line interfaces (CLIs).md'
-    - 'Next steps': 'environment/05.01 Next steps.md'
+      - 'Next steps': 'environment/05.01 Next steps.md'
   - Part 2 - Deploy an IBM Cloud Satellite enabled service:
     - 'Introduction': 'deploy-sat-enabled-services/01.01 Introduction.md'
     - 'Explore Satellite enabled services': 'deploy-sat-enabled-services/02.01 ExploreSatServices.md'
     - 'Watch: Deploying Red Hat OpenShift to an IBM Cloud Satellite Location': 'deploy-sat-enabled-services/03.01 Watch: Deploy ROKS to Sat.md'
-    - 'Demonstrate: How to deploy Red Hat OpenShift to an IBM Cloud Satellite Location': 'deploy-sat-enabled-services/04.01 Demonstrate: Provision ROKS to Sat.md'
     - 'Next steps': 'deploy-sat-enabled-services/05.01 Next steps.md'
   - Part 3 - Deploy an OpenShift application:
     - 'Introduction and terminology': 'deploy-application/01.01 Introduction.md'
