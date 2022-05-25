@@ -17,7 +17,6 @@ nav:
     - 'Introduction': 'environment/01.01 Introduction.md'
     - 'What are IBM Cloud Satellite Locations': 'environment/02.01 What are Locations.md'
     - 'Watch: How to provision a Location in AWS': 'environment/02.02 Watch: How to provision a Location in AWS.md'
-    - 'What are Links': 'environment/03.01 What are Links.md'
     - 'Next steps': 'environment/05.01 Next steps.md'
   - Part 2 - Deploy an IBM Cloud Satellite enabled service:
     - 'Introduction': 'deploy-sat-enabled-services/01.01 Introduction.md'
