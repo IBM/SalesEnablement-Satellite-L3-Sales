@@ -36,11 +36,6 @@ nav:
     - 'Update the development and production frontends': 'deploy-application/04.01 Update the development and production frontends.md'
     - 'Perform a rollback': 'deploy-application/04.02 Perform a rollback.md'
     - 'Next steps': 'deploy-application/05.01 Next steps.md'
-  - Part 4 - Preparing for a client demonstration:
-    - 'Introduction': 'prepping-for-a-demo/01.01 Introduction.md'
-    - 'The Big Event': 'prepping-for-a-demo/02.01 The Big Event.md'
-    - 'Demonstration setup': 'prepping-for-a-demo/03.01 Setting up for the virtual demo.md'
-    - 'Next steps': 'prepping-for-a-demo/04.01 Next steps.md'
 
 theme:
   name: material
