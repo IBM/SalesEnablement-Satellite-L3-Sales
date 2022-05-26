@@ -27,6 +27,7 @@ nav:
     - 'Introduction and terminology': 'deploy-application/01.01 Introduction.md'
     - 'The Food Delivery Application': 'deploy-application/01.02 The Food Delivery Application.md'
     - 'Demonstration flow': 'deploy-application/01.03 Demonstration flow.md'
+    - 'Command Line Interfaces: 'deploy-application/01.04 Using the IBM Cloud command line interfaces (CLIs).md'
     - 'View cluster groups': 'deploy-application/02.01 Create cluster groups.md'
     - 'View configuration': 'deploy-application/03.01 Create a configuration.md'
     - 'Create versions': 'deploy-application/03.02 Create versions.md'
