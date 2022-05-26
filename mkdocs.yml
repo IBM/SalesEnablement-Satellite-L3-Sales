@@ -92,3 +92,6 @@ extra:
     cluster_name: yl-l3-ibm-roks-1
     cluster_id: ca1ttn8w0tjjga091nl0
     ingress: yl-l3-ibm-roks-1-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
+  common:
+    prod_cluster_group: "yl_food_delivery_production"
+    dev_cluster_group: "yl_food_delivery_development"
