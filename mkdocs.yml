@@ -31,7 +31,7 @@ nav:
     - 'View cluster groups': 'deploy-application/02.01 Create cluster groups.md'
     - 'View configuration': 'deploy-application/03.01 Create a configuration.md'
     - 'Create versions using IBM Cloud Portal': 'deploy-application/03.02 Create versions using IBM Cloud Portal.md'
-    - 'Create versions using Command Line Interfaces': 'deploy-application/03.02 Create versions using CLIs.md'
+    - 'Create versions using Command Line Interfaces': 'deploy-application/03.02 Create versions using command line interfaces.md'
     - 'Create subscriptions': 'deploy-application/03.03 Create subscriptions.md'
     - 'Verify the application is deployed': 'deploy-application/03.04 Verify the application is deployed.md'
     - 'Update the development and production frontends': 'deploy-application/04.01 Update the development and production frontends.md'
