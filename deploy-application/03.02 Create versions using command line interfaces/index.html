@@ -733,9 +733,9 @@ ID                                                Worker IP</p>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You may need to replace the string <strong>ip-10-0-1-114</strong> with the name of one of the hosts from the previous command.</p>
+<p>You may need to replace the string <strong>ip-10-0-1-116</strong> with the name of one of the hosts from the previous command.</p>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ibmcloud sat host get --location yl-l3-aws --host ip-10-0-1-114
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ibmcloud sat host get --location yl-l3-aws --host ip-10-0-1-116
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
@@ -784,17 +784,20 @@ ID                                                Worker IP</p>
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-<p>show output</p>
+<p>--2022-05-31 15:19:50--  https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash</p>
+<p>Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...</p>
+<p>Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK</p>
+<p>Length: 12725 (12K) [text/plain]</p>
+<p>Saving to: ‘createVersions.bash’</p>
+<p>createVersions.bash                                 100%[==================================================================================================================&gt;]  12.43K  --.-KB/s    in 0.001s</p>
+<p>2022-05-31 15:19:50 (14.1 MB/s) - ‘createVersions.bash’ saved [12725/12725]</p>
 </details>
 <ol start="8">
 <li>Change the permissions of the script:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod +x createVersions.bash
 </code></pre></div>
-<details class="example">
-<summary>Example output</summary>
-<p>show output</p>
-</details>
 <ol start="9">
 <li>Run the script and respond affirmatively to the prompts:</li>
 </ol>
@@ -802,7 +805,59 @@ ID                                                Worker IP</p>
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-<p>show output</p>
+<p>Retrieving your IBM Cloud Unique ID using command: ibmcloud account user-preference</p>
+<p>Do you want to retrieve all the YAML files from the git repository (https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3/main) (y|n)? y</p>
+<p>Retrieving food-delivery-backendfood-delivery-backend.yaml                          100%[==================================================================================================================&gt;]   5.21K  --.-KB/s    in 0.001s</p>
+<p>Retrieving food-delivery-frontend-v1</p>
+<p>food-delivery-frontend-v1.yaml                      100%[==================================================================================================================&gt;]     746  --.-KB/s    in 0s</p>
+<p>Retrieving food-delivery-frontend-v2</p>
+<p>food-delivery-frontend-v2.yaml                      100%[==================================================================================================================&gt;]     746  --.-KB/s    in 0s</p>
+<p>Retrieving development-route</p>
+<p>development-route.yaml                              100%[==================================================================================================================&gt;]   2.39K  --.-KB/s    in 0s</p>
+<p>Retrieving production-route</p>
+<p>production-route.yaml                               100%[==================================================================================================================&gt;]   2.39K  --.-KB/s    in 0s</p>
+<p>get mkdocs.yml</p>
+<p>mkdocs.yml                                          100%[==================================================================================================================&gt;]   4.43K  --.-KB/s    in 0.001s</p>
+<p>Verify your configuration exists (y|n)? y</p>
+<p>2700039nft-ns configuration exists - UUID = 5208ee8e-75d0-4309-bb0a-c7f38bdee363</p>
+<p>Substitute all placeholders in YAML files (y|n)? y</p>
+<p>Updating food-delivery-backend.yaml</p>
+<p>Updating food-delivery-frontend-v1.yaml</p>
+<p>Updating food-delivery-frontend-v2.yaml</p>
+<p>Updating development-route.yaml</p>
+<p>Updating production-route.yaml</p>
+<p>Do you want to create the versions in your configuration (y|n)? y</p>
+<p>Creating version food-delivery-backend using food-delivery-backend.yaml:</p>
+<div class="highlight"><pre><span></span><code>        ibmcloud sat config version create -name food-delivery-backend --read-config food-delivery-backend.yaml --config 5208ee8e-75d0-4309-bb0a-c7f38bdee363 --file-format yaml
+</code></pre></div>
+<p>Creating configuration version...</p>
+<p>OK</p>
+<p>Configuration Version food-delivery-backend was successfully created with ID f25371c1-4bbb-4ada-9d85-a1a0fd5449f2.</p>
+<p>Creating version food-delivery-frontend-v1 using food-delivery-frontend-v1.yaml:</p>
+<div class="highlight"><pre><span></span><code>        ibmcloud sat config version create -name food-delivery-frontend-v1 --read-config food-delivery-frontend-v1.yaml --config 5208ee8e-75d0-4309-bb0a-c7f38bdee363 --file-format yaml
+</code></pre></div>
+<p>Creating configuration version...</p>
+<p>OK</p>
+<p>Configuration Version food-delivery-frontend-v1 was successfully created with ID dd1e8a5e-2076-4237-b03c-520c38802db5.</p>
+<p>Creating version food-delivery-frontend-v2 using food-delivery-frontend-v2.yaml:</p>
+<div class="highlight"><pre><span></span><code>        ibmcloud sat config version create -name food-delivery-frontend-v2 --read-config food-delivery-frontend-v2.yaml --config 5208ee8e-75d0-4309-bb0a-c7f38bdee363 --file-format yaml
+</code></pre></div>
+<p>Creating configuration version...</p>
+<p>OK</p>
+<p>Configuration Version food-delivery-frontend-v2 was successfully created with ID f586d528-7090-40c4-9cbb-81ff5eca98fe.</p>
+<p>Creating version development-route using development-route.yaml:</p>
+<div class="highlight"><pre><span></span><code>        ibmcloud sat config version create -name development-route --read-config development-route.yaml --config 5208ee8e-75d0-4309-bb0a-c7f38bdee363 --file-format yaml
+</code></pre></div>
+<p>Creating configuration version...</p>
+<p>OK</p>
+<p>Configuration Version development-route was successfully created with ID 688010c9-6d54-4800-8f47-542608cfde77.</p>
+<p>Creating version production-route using production-route.yaml:</p>
+<div class="highlight"><pre><span></span><code>        ibmcloud sat config version create -name production-route --read-config production-route.yaml --config 5208ee8e-75d0-4309-bb0a-c7f38bdee363 --file-format yaml
+</code></pre></div>
+<p>Creating configuration version...</p>
+<p>OK</p>
+<p>Configuration Version production-route was successfully created with ID dd73466a-7d81-44fa-af44-e56332ba4fae.</p>
+<p>Do you want to remove temporary files (y|n)? y</p>
 </details>
 <p>Now that the script has executed, return to the IBM Cloud Portal and verify all 6 versions now exist. You should also explore the YAML files that are used by each subscription. You can do this using the IBM Shell command and commands like <strong>vi</strong> or <strong>cat</strong>, or return to your <strong>Satellite configuration</strong> in the IBM Cloud Portal and look and view the <strong>versions</strong> that have been created. You should see a total of seven versions. The six that you created:</p>
 <ul>
