@@ -86,7 +86,7 @@ extra:
   account: "2435442 - ITZ - Satellite"
   aws:
     location: yl-l3-aws
-    host_ip: ip-10-0-1-114
+    host_ip: ip-10-0-1-116
     cluster_name: yl-l3-aws-roks-1
     cluster_id: ca1ac0pw056abumclji0
     ingress: yl-l3-aws-roks-1-222b3514854c2221251113b2b051506c-0000.upi.containers.appdomain.cloud

@@ -242,7 +242,7 @@ cleanup() {
 	  if [ -f ${yamlBaseName}.yaml ]; then
 			rm ${yamlBaseName}.yaml
 	  fi
-		if [ -f ${yamlBaseName}yaml.orig ]; then
+		if [ -f ${yamlBaseName}.yaml.orig ]; then
   		rm ${yamlBaseName}.yaml.orig
     fi
 	done
@@ -335,7 +335,7 @@ yesno "Verify your configuration exists (y|n)? " && verifyConfig || echo "Skippi
 # get key values from mkdocs.yml
 # perform string substitutions for all the yaml files based upon mkdocs values
 echo
-yesno "Subsititute all placeholders in YAML files (y|n)? " && updateVersionFiles || echo "Skipping string substituions in YAML files."
+yesno "Substitute all placeholders in YAML files (y|n)? " && updateVersionFiles || echo "Skipping string substituions in YAML files."
 
 
 # add versions to config space
