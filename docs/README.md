@@ -1,18 +1,18 @@
 Welcome to the IBM Cloud Satellite Technology Sales Enablement Level 3 learning plan. The goal of this demonstration guide is to provide IBM and Business Partner sellers and technical sellers the knowledge and tools to perform introductory demonstrations on IBM Cloud Satellite.
 
- There are 4 parts to this demonstration guide as seen in the left hand navigation:
+ There are 3 parts to this demonstration guide as seen in the left hand navigation:
 
  - Part 1 - IBM Cloud Satellite overview
  - Part 2 - Deploy an IBM Cloud Satellite enabled service
  - Part 3 - Deploy an OpenShift application
 
-To complete the IBM Cloud Satellite Level 3 badge requirements, IBM and Business Partners sellers must complete Parts 1 and 2 of this demonstration guide. **However, we strongly encourage sellers to complete all three sections.** The technical sales community must complete all three sections. The associated Learning Plan stand and deliver rubrics (IBMers) and quizzes (Business Partners) will be based upon the sections required for their respective roles.
+To complete the IBM Cloud Satellite Level 3 badge requirements, IBM and Business Partners sellers must complete Parts 1 and 2 of this demonstration guide. **However, we strongly encourage sellers to complete all three sections.** The technical sales community must complete all three sections. The associated Learning Plan Stand and Deliver rubrics (IBMers) and quizzes (Business Partners) will be based upon the sections required for their respective roles.
 
 Each of these sections has detailed steps for demonstrating IBM Cloud Satellite. Click on each section name in the left hand navigation bar to expand the section. In Part 1 and Part 2, you will see how the demonstration environment was built and how you can perform a "baking show" type of demonstration using the IBM Cloud Portal, click-thru demos, or videos made available in this demonstration script. Be aware, you will not  be deploying a new Satellite Location or Red Hat OpenShift on IBM Cloud cluster, as these activities take a significant amount of time and resources (money). In Part 3, you will use the IBM Cloud Portal to complete the deployment of a cloud native application. This section provides a compelling demonstration to potential clients.
 
-To complete your {{ learningplan.name }} training, you must complete each of the sections. When done, return to the Your Learning plan (<a href="{{ learningplan.url }}" target="_blank">{{ learningplan.url }}</a>), and mark this activity complete.
+!!! tip
 
-You can also leverage the IBM Cloud Satellite collection <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">here</a> for longer client demonstrations or proof-of-concepts. Be aware, additional provisioning time and manual configurations are required.  Refer to the documentation in the collection.
+    You can also leverage the IBM Cloud Satellite collection <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">here</a> for longer client demonstrations or proof-of-concepts. Be aware, additional provisioning time and manual configurations are required.  Refer to the documentation in the collection.
 
 ## Helpful tips for using this demonstration environment
 
