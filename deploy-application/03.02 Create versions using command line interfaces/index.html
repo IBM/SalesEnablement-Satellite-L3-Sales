@@ -639,7 +639,7 @@
 <ol>
 <li>In the IBM Cloud Portal, with the demonstration account selected (<strong>2435442 - ITZ - Satellite</strong>), click the IBM Cloud Shell icon.</li>
 </ol>
-<p><img alt="" src="_attachments/CloudShellMenu2.png" /></p>
+<p><img alt="" src="../_attachments/CloudShellMenu2.png" /></p>
 <p>The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.</p>
 <p><img alt="" src="_attachments/CloudShell.png" /></p>
 <ol start="2">
@@ -777,21 +777,33 @@ ID                                                Worker IP</p>
 <li>Update the YAML files with your unique Satellite <strong>configuration</strong> and <strong>project/namespace</strong> in the OpenShift clusters.</li>
 <li>Create the remaining 5 versions required for the sample application.</li>
 </ul>
-<ol>
+<ol start="7">
 <li>Download the automated script:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash
 </code></pre></div>
-<ol start="2">
+<details class="example">
+<summary>Example output</summary>
+<p>show output</p>
+</details>
+<ol start="8">
 <li>Change the permissions of the script:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod +x createVersions.bash
 </code></pre></div>
-<ol start="3">
-<li>Run the script and respond to the prompts:</li>
+<details class="example">
+<summary>Example output</summary>
+<p>show output</p>
+</details>
+<ol start="9">
+<li>Run the script and respond affirmatively to the prompts:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./createVersions.bash
 </code></pre></div>
+<details class="example">
+<summary>Example output</summary>
+<p>show output</p>
+</details>
 <p>Now that the script has executed, return to the IBM Cloud Portal and verify all 6 versions now exist. You should also explore the YAML files that are used by each subscription. You can do this using the IBM Shell command and commands like <strong>vi</strong> or <strong>cat</strong>, or return to your <strong>Satellite configuration</strong> in the IBM Cloud Portal and look and view the <strong>versions</strong> that have been created. You should see a total of seven versions. The six that you created:</p>
 <ul>
 <li>kafka-mongo-redis</li>
