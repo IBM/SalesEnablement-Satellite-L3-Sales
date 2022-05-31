@@ -780,17 +780,17 @@ ID                                                Worker IP</p>
 <ol>
 <li>Download the automated script:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>wget
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash
 </code></pre></div>
 <ol start="2">
 <li>Change the permissions of the script:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod +x scriptname
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod +x createVersions.bash
 </code></pre></div>
 <ol start="3">
 <li>Run the script and respond to the prompts:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./scriptname
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./createVersions.bash
 </code></pre></div>
 <p>Now that the script has executed, return to the IBM Cloud Portal and verify all 6 versions now exist. You should also explore the YAML files that are used by each subscription. You can do this using the IBM Shell command and commands like <strong>vi</strong> or <strong>cat</strong>, or return to your <strong>Satellite configuration</strong> in the IBM Cloud Portal and look and view the <strong>versions</strong> that have been created. You should see a total of seven versions. The six that you created:</p>
 <ul>
