@@ -13,10 +13,10 @@ docs_dir: docs
 
 nav:
   - Home: README.md
-  - Part 1 - IBM Cloud Satellite overview:
+  - Part 1 - IBM Cloud Satellite overview and provisioning:
     - 'Introduction': 'environment/01.01 Introduction.md'
     - 'What are IBM Cloud Satellite Locations': 'environment/02.01 What are Locations.md'
-    - 'Watch: How to provision a Location in AWS': 'environment/02.02 Watch: How to provision a Location in AWS.md'
+    - 'Watch: How to provision a Satellite Location in AWS': 'environment/02.02 Watch: How to provision a Location in AWS.md'
     - 'Next steps': 'environment/05.01 Next steps.md'
   - Part 2 - Deploy an IBM Cloud Satellite enabled service:
     - 'Introduction': 'deploy-sat-enabled-services/01.01 Introduction.md'
@@ -88,8 +88,8 @@ extra:
     location: yl-l3-aws
     host_ip: ip-10-0-1-116
     cluster_name: yl-l3-aws-roks-1
-    cluster_id: ca1ac0pw056abumclji0
-    ingress: yl-l3-aws-roks-1-222b3514854c2221251113b2b051506c-0000.upi.containers.appdomain.cloud
+    cluster_id: cadlt2tw0qdi2q6casvg
+    ingress: yl-l3-aws-roks-1-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
   ibm:
     cluster_name: yl-l3-ibm-roks-1
     cluster_id: ca1ttn8w0tjjga091nl0
