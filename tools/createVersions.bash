@@ -22,8 +22,8 @@ export USER_NAMESPACE=""
 # export VERSIONS=("kafka-mongo-redis" "food-delivery-backend" "food-delivery-frontend-v1" "food-delivery-frontend-v2" "development-route" "production-route")
 export VERSIONS=("food-delivery-backend" "food-delivery-frontend-v1" "food-delivery-frontend-v2" "development-route" "production-route")
 export SUBSCRIPTIONS=("kafka-mongo-redis-on-all-clusters" "backend-on-all-clusters" "frontend-on-dev-clusters" "frontend-on-prod-clusters" "route-dev" "route-prod")
-export PROD_CLUSTER_GROUP="food-delivery-production-clusters"
-export DEV_CLUSTER_GROUP="food-delivery-development-clusters"
+export PROD_CLUSTER_GROUP="yl-food-delivery-production"
+export DEV_CLUSTER_GROUP="yl-food-delivery-development"
 
 export KMR_sub=(${SUBSCRIPTIONS[0]} ${VERSIONS[0]} "--group ${PROD_CLUSTER_GROUP} --group ${DEV_CLUSTER_GROUP}")
 export FDB_sub=(${SUBSCRIPTIONS[1]} ${VERSIONS[1]} "--group ${PROD_CLUSTER_GROUP} --group ${DEV_CLUSTER_GROUP}")
@@ -49,7 +49,7 @@ export SUBSCRIPTION_DEFINITIONS=(KMR_sub FDB_sub FEDEV_sub FEPROD_sub RD_sub RP_
 #| route-prod                        | production-route          | food-delivery-production-clusters  |
 
 
-export GITREPO_RAW_URL_BASE="https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3/main"
+export GITREPO_RAW_URL_BASE="https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main"
 export MKDOCS="mkdocs.yml"
 export WGET_OPTIONS="-q --show-progress"
 
