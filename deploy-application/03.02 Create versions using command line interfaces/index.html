@@ -697,7 +697,7 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <p>Retrieving locations...</p>
 <p>OK</p>
 <p>Name            ID                     Status   Ready   Created     Hosts (used/total)   Managed From</p>
-<p>aws-us-east-2   c7o2a02w03bj8394o9ng   normal   yes     1 day ago   12 / 12              wdc</p>
+<p>yl-l3-aws                       cad1ulgw093e0708rkt0   normal            yes     4 days ago     12 / 12              wdc</p>
 </details>
 <ol start="4">
 <li>Get the details for a specific IBM Cloud Satellite Location.</li>
@@ -708,9 +708,9 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <summary>Example output</summary>
 <p>Retrieving location...</p>
 <p>OK</p>
-<p>Name:                           aws-us-east-2</p>
-<p>ID:                             c7o2a02w03bj8394o9ng</p>
-<p>Created:                        2022-01-25 16:27:44 +0000 (1 day ago)</p>
+<p>Name:                           yl-l3-aws</p>
+<p>ID:                             cad1ulgw093e0708rkt0</p>
+<p>Created:                        2022-06-03 14:48:54 +0000 (4 days ago)</p>
 <p>Managed From:                   wdc</p>
 <p>State:                          normal</p>
 <p>Ready for deployments:          yes</p>
@@ -718,11 +718,16 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <p>Hosts Available:                0</p>
 <p>Hosts Total:                    12</p>
 <p>Host Zones:                     us-east-2a, us-east-2b, us-east-2c</p>
-<p>Public Service Endpoint URL:    https://c117.us-east.satellite.cloud.ibm.com:30051</p>
+<p>Provider:                       aws</p>
+<p>Provider Region:                us-east-2</p>
+<p>Provider Credentials:           yes</p>
+<p>Public Service Endpoint URL:    https://c107.us-east.satellite.cloud.ibm.com:31117</p>
 <p>Private Service Endpoint URL:   -</p>
-<p>OpenVPN Server Port:            32196</p>
+<p>OpenVPN Server Port:            -</p>
 <p>Ignition Server Port:           -</p>
-<p>Konnectivity Server Port:       -</p>
+<p>Konnectivity Server Port:       30696</p>
+<p>Logging Key Set:                no</p>
+<p>Activity Tracker Key Set:       no</p>
 </details>
 <ol start="5">
 <li>Get a list of the hosts associated with a specific IBM Cloud Satellite Location.</li>
@@ -733,20 +738,19 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <summary>Example output</summary>
 <p>Retrieving hosts...</p>
 <p>OK</p>
-<p>Name            ID                     State      Status   Zone         Cluster          Worker
-ID                                                Worker IP</p>
-<p>ip-10-0-1-114   b7f18e883cd88cace8d7   assigned   Ready    us-east-2a   aws-os-cluster   sat-ip1001114-df552aab5e6958f69e3e2004ff8de9e21e941cdf   10.0.1.114</p>
-<p>ip-10-0-1-250   e30ad9324972c7197d8b   assigned   Ready    us-east-2a   aws-os-cluster   sat-ip1001250-4a2ea8e29c0222974e39d954a4e20f26b7ee702a   10.0.1.250</p>
-<p>ip-10-0-1-51    31ce10f9188d8f39f498   assigned   Ready    us-east-2a   aws-os-cluster   sat-ip100151-7fe9c382d5b86bd3de7113f65189bcbf5c720ab3    10.0.1.51</p>
-<p>ip-10-0-1-80    d22325e1dc4741fd12f2   assigned   Ready    us-east-2a   infrastructure   sat-ip100180-9506c0d50c1faf25ebdee971cd8fb04b03a85f46    10.0.1.80</p>
-<p>ip-10-0-2-179   c092b543a00d50b93890   assigned   Ready    us-east-2b   aws-os-cluster   sat-ip1002179-f4a6bd55983e7e0a8d1071b073dd7bdc983d3f80   10.0.2.179</p>
-<p>ip-10-0-2-4     3839f171b846beb1c1e9   assigned   Ready    us-east-2b   aws-os-cluster   sat-ip10024-2dd947a2bfbbbc129e2c1b618c0e135481ac44b8     10.0.2.4</p>
-<p>ip-10-0-2-49    58a414bd88d303fca850   assigned   Ready    us-east-2b   aws-os-cluster   sat-ip100249-4394d34dc43811c985e6211df97abe31472a8a69    10.0.2.49</p>
-<p>ip-10-0-2-92    ba5337e855ee8b94477f   assigned   Ready    us-east-2b   infrastructure   sat-ip100292-92e16bb3dffb35810fd8fe8a5003abf1745adf81    10.0.2.92</p>
-<p>ip-10-0-3-101   a2650ddf093fbb8b70bc   assigned   Ready    us-east-2c   aws-os-cluster   sat-ip1003101-2584aa634011ba4d8a0f57986f4f6f087fa895cf   10.0.3.101</p>
-<p>ip-10-0-3-111   6dab45fb390d80f5c4d2   assigned   Ready    us-east-2c   aws-os-cluster   sat-ip1003111-5c9a519ad61010c17548c540a510d738f296d975   10.0.3.111</p>
-<p>ip-10-0-3-157   f00f81d01b6860e050df   assigned   Ready    us-east-2c   infrastructure   sat-ip1003157-62a198744fdd0577ea0640a816f8a2f35d2a2198   10.0.3.157</p>
-<p>ip-10-0-3-63    4a856f18f177ffc014eb   assigned   Ready    us-east-2c   aws-os-cluster   sat-ip100363-6bcb834add6d924ce2a0a0772835ae8794497162    10.0.3.63</p>
+<p>Name            ID                     State      Status   Zone         Cluster          Worker             ID                                                Worker IP</p>
+<p>ip-10-0-1-107   289f4f6e3d1a3c42d29d   assigned   Ready    us-east-2a   yl-l3-aws-roks-1   sat-ip1001107-1ee31562dda0bcd519bc8beea3614836eb83fe18   10.0.1.107</p>
+<p>ip-10-0-1-14    0b831f71a8d326ee90b8   assigned   Ready    us-east-2a   yl-l3-aws-roks-1   sat-ip100114-25b1fbbb379b638dde07d7de5f7ee1c6709713f5    10.0.1.14</p>
+<p>ip-10-0-1-226   b4442548c25c1433d7e5   assigned   Ready    us-east-2a   infrastructure     sat-ip1001226-bb043735a3c21665c2b594f06a9c92685a491887   10.0.1.226
+ ip-10-0-1-4     22c2a1b04aff873c9f04   assigned   Ready    us-east-2a   yl-l3-aws-roks-1   sat-ip10014-8d8549797efbe24b18cbad62ec223b2ce976ddac     10.0.1.4</p>
+<p>ip-10-0-2-140   bb98074e3ec369933b25   assigned   Ready    us-east-2b   infrastructure     sat-ip1002140-e63e7ac9df2602fc91be1372cc7052e934f4cf23   10.0.2.140</p>
+<p>ip-10-0-2-15    7bc6a0ae9f52e9f49361   assigned   Ready    us-east-2b   yl-l3-aws-roks-1   sat-ip100215-6d04589925c7dd655ab18ed8a8f2199295271328    10.0.2.15</p>
+<p>ip-10-0-2-168   ff15fc49a3c753607e57   assigned   Ready    us-east-2b   yl-l3-aws-roks-1   sat-ip1002168-05ea71e250a4d2ee101f2a4487323dc5a126da20   10.0.2.168</p>
+<p>ip-10-0-2-71    5c64f7f1e532d60dd221   assigned   Ready    us-east-2b   yl-l3-aws-roks-1   sat-ip100271-5c0a3c15c3326535b07a0679e16a30977e5b8bc9    10.0.2.71</p>
+<p>ip-10-0-3-111   b9b8a67a1b6ca33671cc   assigned   Ready    us-east-2c   infrastructure     sat-ip1003111-ce17f52dba844e500fdca4a10a05b5a02ab66cc3   10.0.3.111</p>
+<p>ip-10-0-3-122   f03bbefa2b076dea98f4   assigned   Ready    us-east-2c   yl-l3-aws-roks-1   sat-ip1003122-f8db0228dc7bfa4e0cae336381badada5fd96978   10.0.3.122</p>
+<p>ip-10-0-3-18    fd4035666c40c463e156   assigned   Ready    us-east-2c   yl-l3-aws-roks-1   sat-ip100318-9fecf3e6ff050f8c5e934e974610440d82572360    10.0.3.18</p>
+<p>ip-10-0-3-230   5d6fbf6d5440d636743f   assigned   Ready    us-east-2c   yl-l3-aws-roks-1   sat-ip1003230-95ff4fb6c3c07fc19652f42e8bfa6a6284a78451   10.0.3.230</p>
 </details>
 <details class="failure">
 <summary>If this fails</summary>
@@ -757,30 +761,30 @@ ID                                                Worker IP</p>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You may need to replace the string <strong>ip-10-0-1-116</strong> with the name of one of the hosts from the previous command.</p>
+<p>You may need to replace the string <strong>ip-10-0-1-107</strong> with the name of one of the hosts from the previous command.</p>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ibmcloud sat host get --location yl-l3-aws --host ip-10-0-1-116
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ibmcloud sat host get --location yl-l3-aws --host ip-10-0-1-107
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
 <p>Retrieving host details...</p>
-<p>Name:     ip-10-0-1-114</p>
-<p>ID:       b7f18e883cd88cace8d7</p>
+<p>Name:     ip-10-0-1-107</p>
+<p>ID:       289f4f6e3d1a3c42d29d</p>
 <p>State:    assigned</p>
 <p>Status:   Ready</p>
 <p>Zone:     us-east-2a</p>
 <p>Labels</p>
-<p>cpu      4</p>
-<p>env      prod</p>
-<p>memory   15963200</p>
-<p>os       RHEL7</p>
-<p>zone     us-east-2a</p>
+<p>memory     15963132</p>
+<p>os         RHEL7</p>
+<p>provider   aws</p>
+<p>zone       us-east-2a</p>
+<p>cpu        4</p>
+<p>env        prod</p>
 <p>Assignment</p>
-<p>Cluster:       aws-os-cluster</p>
+<p>Cluster:       yl-l3-aws-roks-1</p>
 <p>Worker Pool:   default</p>
-<p>Worker ID:     sat-ip1001114-df552aab5e6958f69e3e2004ff8de9e21e941cdf</p>
-<p>Worker IP:     10.0.1.114</p>
-<p>Date:          21 hours ago</p>
+<p>Worker ID:     sat-ip1001107-1ee31562dda0bcd519bc8beea3614836eb83fe18</p>
+<p>Worker IP:     10.0.1.107</p>
 <p>OK</p>
 </details>
 <p>All the commands executed above are commands that list or view the details of an IBM Cloud Satellite object. There are also commands to create, remove, and modify these objects. In this demonstration environment, you do <strong>not</strong> have permissions to add, remove or change Locations or Hosts.</p>
