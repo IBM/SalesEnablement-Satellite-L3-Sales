@@ -60,6 +60,8 @@ theme:
 plugins:
     - search
     - mkdocs-video
+        is_video: True
+        video_autoplay: False
     - macros
 
 markdown_extensions:
