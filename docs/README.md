@@ -39,14 +39,8 @@ Throughout the lab, you will see images that are examples of what you should be 
 
 ![](_attachments/Usage-Clipboard.png)
 
-Additionally, there are several "click-thru" demonstrations.  These will appear like the static image below.
+Additionally, there are several "click-thru" demonstrations.  Links to click-thru demonstrations will open in a new browser window or tab with a screen similar to the image below.
 
 ![](_attachments/ClickThruStartPage.png)
 
-It is recommended that you open the "click-thru" demonstration in a new browser window in full screen mode.  The methods to do this depend on the browser you are using:
-
-- Firefox: right click on the image, from the context menu that pops up, select "This Frame -> Open Frame in New Window"
-- Safari: right click on the image, from the context menu that pops up, select "Open Frame in New Window"
-- Chrome: right click on the white boarder of the image, from the context menu that pops up, select "View Frame Source", remove the string "view-source" from the new tab's URL
-
-Next, click the play button ![](_attachments/ClickThruPlayButton.png) in the middle of the screen. Then, simply follow the steps in the demonstration guide.  If at any point you are unsure where to click, simply click anywhere on the screen and a highlight box will appear showing where to click next.
+Next, click the play button ![](_attachments/ClickThruPlayButton.png) in the middle of the screen. Then, simply follow the steps in the demonstration guide. If at any point you are unsure where to click, simply click anywhere on the screen and a highlight box will appear showing where to click next.
