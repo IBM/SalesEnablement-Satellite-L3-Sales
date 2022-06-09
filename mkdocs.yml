@@ -62,8 +62,8 @@ plugins:
         is_video: True
         video_autoplay: False
         css_style:
-        width: "100%"
-        height: "22.172vw"
+           width: "100%"
+           height: "22.172vw"
     - macros
 
 markdown_extensions:
