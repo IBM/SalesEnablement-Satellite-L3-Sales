@@ -15,6 +15,7 @@ nav:
   - Home: README.md
   - Part 1 - IBM Cloud Satellite overview and provisioning:
     - 'Introduction': 'environment/01.01 Introduction.md'
+    - 'Test ignroe this': 'environment/testnav.md'
     - 'What are IBM Cloud Satellite Locations': 'environment/02.01 What are Locations.md'
     - 'Watch: How to provision a Satellite Location in AWS': 'environment/02.02 Watch: How to provision a Location in AWS.md'
     - 'Next steps': 'environment/05.01 Next steps.md'
