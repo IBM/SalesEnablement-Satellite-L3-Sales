@@ -43,4 +43,13 @@ Additionally, there are several "click-thru" demonstrations.  Links to click-thr
 
 ![](_attachments/ClickThruStartPage.png)
 
-Next, click the play button ![](_attachments/ClickThruPlayButton.png) in the middle of the screen. Then, simply follow the steps in the demonstration guide. If at any point you are unsure where to click, simply click anywhere on the screen and a highlight box will appear showing where to click next.
+Click the play button ![](_attachments/ClickThruPlayButton.png) in the middle of the screen to start the demo. Then, simply follow the steps in the demonstration guide. If at any point you are unsure where to click, click anywhere on the screen and a highlight box will appear showing where to click next.
+
+## Acronyms
+
+The following acronyms are used throughout this demonstration guide:
+
+    - YAML - Yet Another Markup Language
+    - AWS - Amazon Web Services
+    - ctrl - The control key on your keyboard
+    - cmd - The command key on your keyboard
