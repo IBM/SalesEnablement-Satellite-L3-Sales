@@ -58,12 +58,7 @@ theme:
 
 plugins:
     - search
-    - mkdocs-video:
-        is_video: True
-        video_autoplay: False
-        css_style:
-           width: "100%"
-           height: "22.172vw"
+    - mkdocs-video
     - macros
 
 markdown_extensions:
