@@ -790,16 +790,14 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <p>All the commands executed above are commands that list or view the details of an IBM Cloud Satellite object. There are also commands to create, remove, and modify these objects. In this demonstration environment, you do <strong>not</strong> have permissions to add, remove or change Locations or Hosts.</p>
 <h1 id="create-versions-for-the-food-delivery-application">Create <strong>Versions</strong> for the Food Delivery application</h1>
 <p>Now that you are familiar with the CLIs for IBM Cloud Satellite, create the other 5 <strong>versions</strong> for our demonstration.  The CLI syntax to create a version is:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ibmcloud sat config version create --config CONFIG --file-format FORMAT --name NAME --read-config CONFIG [--description DESCRIPTION] [-q]
-</code></pre></div>
+<p>ibmcloud sat config version create --config CONFIG --file-format FORMAT --name NAME --read-config CONFIG [--description DESCRIPTION] [-q]</p>
 <p>The parameters are:</p>
-<div class="highlight"><pre><span></span><code>--name value         The name of the Satellite configuration version.
---config value       The name or ID of the Satellite configuration.
---file-format        The file format of the configuration version. Available options: yaml
---description value  Description for the Satellite configuration version.
---read-config value  The file path for the configuration version file.
--q                   Do not show the message of the day or update reminders.
-</code></pre></div>
+<p>--name value         The name of the Satellite configuration version.
+   --config value       The name or ID of the Satellite configuration.
+   --file-format        The file format of the configuration version. Available options: yaml
+   --description value  Description for the Satellite configuration version.
+   -read-config value  The file path for the configuration version file.
+   -q                   Do not show the message of the day or update reminders.</p>
 <p>To save time and prevent typographical errors, an automated script has been created for you. The script is interactive and will display all the command lines as they are executed. The script will do the following:</p>
 <ul>
 <li>Download all the YAML files that will be used for the <strong>versions</strong>.</li>
@@ -809,7 +807,7 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <ol start="7">
 <li>Download the automated script:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
@@ -825,12 +823,12 @@ HTTP request sent, awaiting response... 200 OK</p>
 <ol start="8">
 <li>Change the permissions of the script so it can execute:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod +x createVersions.bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>chmod +x createVersions.bash
 </code></pre></div>
 <ol start="9">
-<li>Run the script and respond affirmatively to the prompts:</li>
+<li>Run the script and when prompted, enter <strong>y</strong> for yes:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./createVersions.bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>./createVersions.bash
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
