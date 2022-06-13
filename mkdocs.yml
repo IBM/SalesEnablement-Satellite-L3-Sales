@@ -87,7 +87,7 @@ extra:
     location: yl-l3-aws
     host_ip: ip-10-0-1-107
     cluster_name: yl-l3-aws-roks-1
-    cluster_id: cadlt2tw0qdi2q6casvg
+    cluster_id: cajmcb3w0omsgg4vtq60
     ingress: yl-l3-aws-roks-1-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
   ibm:
     cluster_name: yl-l3-ibm-roks-1
