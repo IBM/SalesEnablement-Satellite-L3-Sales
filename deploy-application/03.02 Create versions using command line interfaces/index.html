@@ -789,7 +789,7 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 </details>
 <p>All the commands executed above are commands that list or view the details of an IBM Cloud Satellite object. There are also commands to create, remove, and modify these objects. In this demonstration environment, you do <strong>not</strong> have permissions to add, remove or change Locations or Hosts.</p>
 <h1 id="create-versions-for-the-food-delivery-application">Create <strong>Versions</strong> for the Food Delivery application</h1>
-<p>Now that you are familiar with the CLIs for IBM Cloud Satellite, create the other 5 <strong>versions</strong> for our demonstration.  The CLI syntax to create a version is:</p>
+<p>Now that you are familiar with the CLIs for IBM Cloud Satellite, you can create the other 5 <strong>versions</strong> for our demonstration.  The CLI syntax to create a version is:</p>
 <p>ibmcloud sat config version create --config CONFIG --file-format FORMAT --name NAME --read-config CONFIG [--description DESCRIPTION] [-q]</p>
 <p>The parameters are:</p>
 <p>--name value         The name of the Satellite configuration version.</p>
@@ -886,7 +886,7 @@ HTTP request sent, awaiting response... 200 OK</p>
 <p>Configuration Version production-route was successfully created with ID dd73466a-7d81-44fa-af44-e56332ba4fae.</p>
 <p>Do you want to remove temporary files (y|n)? y</p>
 </details>
-<p>Now that the script has executed, return to the IBM Cloud Portal and verify all 6 versions now exist. You should also explore the YAML files that are used by each subscription. You can do this using the IBM Shell command and commands like <strong>vi</strong> or <strong>cat</strong>, or return to your <strong>Satellite configuration</strong> in the IBM Cloud Portal and examine the <strong>versions</strong> that have been created. You should see a total of seven versions. The six that you created:</p>
+<p>Now that the script has executed, return to the IBM Cloud Portal and verify all 6 versions now exist. You should also explore the YAML files that are used by each subscription. Return to your <strong>Satellite configuration</strong> in the IBM Cloud Portal and examine the <strong>versions</strong> that have been created. You should see a total of seven versions. The six that you created:</p>
 <ul>
 <li>kafka-mongo-redis</li>
 <li>food-delivery-backend</li>
@@ -896,19 +896,6 @@ HTTP request sent, awaiting response... 200 OK</p>
 <li>production-route</li>
 </ul>
 <p><img alt="" src="../_attachments/0122-allVersions2.png" /></p>
-<div class="admonition info inline end">
-<p class="admonition-title">AWS CLI install steps</p>
-<p><code>curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" -q</code></p>
-<p><code>mkdir awsinstall</code></p>
-<p><code>mkdir bin</code></p>
-<p><code>./aws/install -i awsinstall -b bin</code></p>
-<p><code>aws configure</code></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Extra Credit</p>
-<p>Did you know you can install the AWS command line utilities in your IBM Cloud Shell instance? IBM Cloud Satellite clients may find this useful in managing their hybrid cloud environment.</p>
-<p>For this demonstration, we do not provide the credentials to complete the configuration.</p>
-</div>
 
               
             </article>

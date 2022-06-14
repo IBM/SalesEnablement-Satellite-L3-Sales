@@ -632,6 +632,27 @@
 
 <p>The next step is optional for client demonstrations.</p>
 <p>Sometimes, updates need to be rolled back. This is achieved by reverting from the current <strong>version</strong> to a previous one. The steps are the same as those performed in the last exercise. In this case, edit the <strong>frontend-on-prod-clusters</strong> <strong>subscription</strong> and change from the <strong>food-delivery-frontend-v2</strong> <strong>version</strong> back to the <strong>food-delivery-frontend-v1</strong> <strong>version</strong>.</p>
+<ol>
+<li>
+<p>Open the IBM Cloud portal to the Configurations overview page: <a href="https://cloud.ibm.com/satellite/configuration" target="_blank">https://cloud.ibm.com/satellite/configuration</a>.</p>
+</li>
+<li>
+<p>Click the <strong>configuration</strong> link based upon your <strong>Demo-UUID</strong>.</p>
+</li>
+<li>
+<p>Edit the <strong>frontend-on-dev-clusters</strong> Subscription.</p>
+</li>
+<li>
+<p>Change the <strong>version</strong> for the <strong>subscription</strong> to use the <strong>food-delivery-frontend-v1</strong> and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Verify the <strong>Rollout status</strong> is updated.</p>
+</li>
+<li>
+<p>Verify the original frontend has been re-deployed to the development environment.</p>
+</li>
+</ol>
+<p>You have now completed a rollback of the Food Delivery application.</p>
 
               
             </article>
