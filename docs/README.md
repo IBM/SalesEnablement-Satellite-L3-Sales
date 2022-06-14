@@ -1,4 +1,4 @@
-Welcome to the IBM Cloud Satellite Technology Sales Enablement Level 3 learning plan. The goal of this demonstration guide is to provide IBM Sales and Technical Sales and Business Partner Sales and Technical Sales the knowledge and tools to perform introductory demonstrations on IBM Cloud Satellite.
+Welcome to the IBM Cloud Satellite Technology Sales Enablement Level 3 demonstration guide. The goal of this demonstration guide is to provide IBM Sales and Technical Sales and Business Partner Sales and Technical Sales the knowledge and tools to perform introductory demonstrations of IBM Cloud Satellite.
 
  There are 3 parts to this demonstration guide as seen in the left hand navigation:
 

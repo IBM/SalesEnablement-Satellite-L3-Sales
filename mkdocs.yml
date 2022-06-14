@@ -1,6 +1,6 @@
 # Project info
-site_name: IBM Cloud Satellite L3 for Sales Demonstration
-site_description: IBM Cloud Satellite Sales Enablement Level 3 Demonstration
+site_name: IBM Cloud Satellite Level 3 Demonstration Guide
+site_description: IBM Cloud Satellite Sales Enablement Level 3 Demonstration Guide
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
 copyright: Copyright &copy; 2022 IBM
 
@@ -85,7 +85,7 @@ extra:
   account: "2435442 - ITZ - Satellite"
   aws:
     location: yl-l3-aws
-    host_ip: ip-10-0-2-11 
+    host_ip: ip-10-0-2-11
     cluster_name: yl-l3-aws-roks-1
     cluster_id: cajmcb3w0omsgg4vtq60
     ingress: yl-l3-aws-roks-1-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
