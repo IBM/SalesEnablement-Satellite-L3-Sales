@@ -655,13 +655,9 @@
 
 <p>Command Line Interfaces (CLIs) are available for IBM Cloud Satellite. In this section, explore the CLI capabilities related to IBM Cloud Satellite Locations. You can learn more about all the IBM Cloud Satellite CLIs <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-satellite-cli-reference" target="_blank">here</a>. When doing client demonstrations, it is important to understand who is in your audience. Performing demonstrations of CLIs to a Chief Technology Officer (CTO) or Chief Information Officer (CIO) may not be well received; however, this type of demonstration may resonate well with other audiences like members of the IT staff, line-of-business developers, and others. These audiences will want to know that CLIs exist to perform the IBM Cloud Satellite tasks as they will probably want to further automate them in their deployments.</p>
 <h1 id="overview-of-ibm-cloud-satellite-clis">Overview of IBM Cloud Satellite CLIs</h1>
-<p>In this part of the demonstration, you will use the IBM Cloud Shell. If you are not familiar with IBM Cloud Shell, you can learn about it <a href="https://cloud.ibm.com/docs/cloud-shell?topic=cloud-shell-getting-started" target="_blank">here</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Use the <strong>copy</strong> capability of the demonstration guide to copy and paste commands to the IBM Cloud Command Shell to avoid typing errors.</p>
-</div>
+<p>In this part of the demonstration, you will use the IBM Cloud Shell. If you are not familiar with IBM Cloud Shell, you can learn about it <a href="https://cloud.ibm.com/docs/cloud-shell?topic=cloud-shell-getting-started" target="_blank">here</a>. In most of the steps below, <strong>copy</strong> the command line using the <img alt="" src="../_attachments/CopyToClipboard.png" /> icon and paste it into the IBM Cloud Shell using <span class="keys"><kbd class="key-control">Ctrl</kbd></span><strong>+v</strong>, <span class="keys"><kbd class="key-command">Cmd</kbd></span><strong>+v</strong>, or right click and select paste at the prompt in the IBM Cloud Shell.</p>
 <ol>
-<li>In the IBM Cloud Portal, with the demonstration account selected (<strong>2435442 - ITZ - Satellite</strong>), click the IBM Cloud Shell icon.</li>
+<li>In the IBM Cloud Portal, with the demonstration account selected (<strong>2435442 - ITZ - Satellite</strong>), click the IBM Cloud Shell icon. If you closed the portal, open <a href="https://cloud.ibm.com/satellite/overview" target="_blank">here</a>.</li>
 </ol>
 <p><img alt="" src="../_attachments/CloudShellMenu2.png" /></p>
 <p>The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.</p>
@@ -789,15 +785,7 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 </details>
 <p>All the commands executed above are commands that list or view the details of an IBM Cloud Satellite object. There are also commands to create, remove, and modify these objects. In this demonstration environment, you do <strong>not</strong> have permissions to add, remove or change Locations or Hosts.</p>
 <h1 id="create-versions-for-the-food-delivery-application">Create <strong>Versions</strong> for the Food Delivery application</h1>
-<p>Now that you are familiar with the CLIs for IBM Cloud Satellite, you can create the other 5 <strong>versions</strong> for our demonstration.  The CLI syntax to create a version is:</p>
-<p>ibmcloud sat config version create --config CONFIG --file-format FORMAT --name NAME --read-config CONFIG [--description DESCRIPTION] [-q]</p>
-<p>The parameters are:</p>
-<p>--name value         The name of the Satellite configuration version.</p>
-<p>--config value       The name or ID of the Satellite configuration.</p>
-<p>--file-format        The file format of the configuration version. Available options: yaml</p>
-<p>--description value  Description for the Satellite configuration version.</p>
-<p>-read-config value  The file path for the configuration version file.</p>
-<p>-q                   Do not show the message of the day or update reminders.</p>
+<p>Now that you are familiar with the CLIs for IBM Cloud Satellite, you can create the other 5 <strong>versions</strong> for our demonstration.</p>
 <p>To save time and prevent typographical errors, an automated script has been created for you. The script is interactive and will display all the command lines as they are executed. The script will do the following:</p>
 <ul>
 <li>Download all the YAML files that will be used for the <strong>versions</strong>.</li>
@@ -805,7 +793,7 @@ If you are accessing the cluster for the first time, 'kubectl' commands might fa
 <li>Create the remaining 5 versions required for the Food Delivery application.</li>
 </ul>
 <ol start="7">
-<li>Download the automated script:</li>
+<li>Download the automated script by copying the command below and pasting it in the IBM Cloud Shell at the prompt:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/createVersions.bash
 </code></pre></div>
@@ -821,12 +809,12 @@ HTTP request sent, awaiting response... 200 OK</p>
 <p>2022-05-31 15:19:50 (14.1 MB/s) - ‘createVersions.bash’ saved [12725/12725]</p>
 </details>
 <ol start="8">
-<li>Change the permissions of the script so it can execute:</li>
+<li>Change the permissions of the script so it can execute by copying the command below and pasting it in the IBM Cloud Shell at the prompt:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>chmod +x createVersions.bash
 </code></pre></div>
 <ol start="9">
-<li>Run the script and when prompted, enter <strong>y</strong> for yes:</li>
+<li>Run the script by copying the command below and pasting it in the IBM Cloud Shell at the prompt and when prompted with a question, enter <strong>y</strong> for yes:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>./createVersions.bash
 </code></pre></div>
