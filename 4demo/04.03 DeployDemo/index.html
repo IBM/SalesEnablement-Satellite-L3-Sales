@@ -620,20 +620,23 @@
 <li>Enter the URL for <strong>your</strong> fork of the GitHub repository for the sample code. This is the URL recorded in step 28 in the <strong>Setup GitHub repository</strong> chapter.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-SubURL.png" /></p>
-<p>??? question "Are private GitHub repositories supported?</p>
-<div class="highlight"><pre><span></span><code>Yes, private GitHub repositories are supported. Additional configuration steps are required to create a **secret** on the target cluster that contains a personal access token with at least **read** access to the private repository. Learn more &lt;a href=&quot;https://cloud.ibm.com/docs/satellite?topic=satellite-satcon-manage-gitops&amp;interface=ui#create-satconfig-ui-gitops&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
-</code></pre></div>
+<details class="question">
+<summary>Are private GitHub repositories supported?</summary>
+<p>Yes, private GitHub repositories are supported. Additional configuration steps are required to create a <strong>secret</strong> on the target cluster that contains a personal access token with at least <strong>read</strong> access to the private repository. Learn more <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-satcon-manage-gitops&interface=ui#create-satconfig-ui-gitops" target="_blank">here</a>.</p>
+</details>
 <ol start="6">
-<li>Enter <strong>config-sample-dev</strong> in the <strong>Branch name</strong> text entry field.</li>
-<li>Enter <strong>deployments/*.yaml</strong> in the <strong>Path</strong> text entry field.</li>
-<li>If not entered automatically, enter <strong>config-sample-dev</strong> in the <strong>Subscription name field</strong>.</li>
+<li>Enter <code>**config-sample-dev**</code> in the <strong>Branch name</strong> text entry field.</li>
+<li>Enter <code>**deployments/*.yaml**</code> in the <strong>Path</strong> text entry field.</li>
+<li>If not entered automatically, enter <code>**config-sample-dev**</code> in the <strong>Subscription name field</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-SubFields.png" /></p>
 <ol start="9">
 <li>Check the checkbox for the <strong>se-l3-development</strong> cluster group in the table of cluster groups.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-ClusterGroups.png" /></p>
-<p>!!! hint "Enter <strong>se-l3</strong> in the search field to filter the <strong>Cluster Groups</strong> table. </p>
+<div class="admonition hint">
+<p class="admonition-title">Enter <strong>se-l3</strong> in the search field to filter the <strong>Cluster Groups</strong> table.</p>
+</div>
 <ol start="10">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
