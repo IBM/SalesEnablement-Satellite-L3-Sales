@@ -12,8 +12,15 @@
         <meta name="author" content="Andrew R. Jones (andrewj@us.ibm.com)">
       
       
+      
+        <link rel="prev" href="../../1setup/01.03%20CreateReservation/">
+      
+      
+        <link rel="next" href="../02.02%20Services/">
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
@@ -21,14 +28,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -46,6 +56,7 @@
 
     
     
+    
   </head>
   
   
@@ -56,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -80,7 +91,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="IBM Cloud Satellite Level 3" class="md-header__button md-logo" aria-label="IBM Cloud Satellite Level 3" data-md-component="logo">
       
@@ -89,6 +102,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -108,31 +122,36 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -141,12 +160,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -158,7 +180,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -188,6 +210,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="IBM Cloud Satellite Level 3" class="md-nav__button md-logo" aria-label="IBM Cloud Satellite Level 3" data-md-component="logo">
@@ -203,14 +226,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
@@ -218,112 +245,147 @@
     
       
       
-      
-
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Part 1 - Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Part 1 - Setup" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Part 1 - Setup
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Part 1 - Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Part 1 - Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../1setup/01.01%20Introduction/" class="md-nav__link">
-        The environment
+        
+  
+  <span class="md-ellipsis">
+    The environment
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../1setup/01.02%20Pre-requisites/" class="md-nav__link">
-        Pre-requisites
+        
+  
+  <span class="md-ellipsis">
+    Pre-requisites
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../1setup/01.03%20CreateReservation/" class="md-nav__link">
-        Create environment reservation
+        
+  
+  <span class="md-ellipsis">
+    Create environment reservation
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Part 2 - Provisioning and configuring IBM Cloud Satellite
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Part 2 - Provisioning and configuring IBM Cloud Satellite" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Part 2 - Provisioning and configuring IBM Cloud Satellite
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Part 2 - Provisioning and configuring IBM Cloud Satellite
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Part 2 - Provisioning and configuring IBM Cloud Satellite
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
     
@@ -331,231 +393,314 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Locations
+        
+  
+  <span class="md-ellipsis">
+    Locations
+  </span>
+  
+
       </a>
       
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../02.02%20Services/" class="md-nav__link">
-        Satellite-enabled services
+        
+  
+  <span class="md-ellipsis">
+    Satellite-enabled services
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../02.03%20LinkEndpoints/" class="md-nav__link">
-        Link endpoints
+        
+  
+  <span class="md-ellipsis">
+    Link endpoints
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Part 3 - Satellite Config
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Part 3 - Satellite Config" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Part 3 - Satellite Config
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Part 3 - Satellite Config
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Part 3 - Satellite Config
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../3config/03.01%20IntroAndTerms/" class="md-nav__link">
-        What is Sat Config
+        
+  
+  <span class="md-ellipsis">
+    What is Sat Config
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../3config/03.02%20SetupGitHub/" class="md-nav__link">
-        Setup GitHub repository
+        
+  
+  <span class="md-ellipsis">
+    Setup GitHub repository
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../3config/03.03%20GitHubConfig/" class="md-nav__link">
-        Deploy a web app using Sat Config
+        
+  
+  <span class="md-ellipsis">
+    Deploy a web app using Sat Config
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Part 4 - The demonstration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Part 4 - The demonstration" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Part 4 - The demonstration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
           
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Part 4 - The demonstration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Part 4 - The demonstration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../4demo/04.01%20Introduction/" class="md-nav__link">
-        Introduction
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../4demo/04.02%20GeneralDemo/" class="md-nav__link">
-        High level demonstration of IBM Cloud Satellite
+        
+  
+  <span class="md-ellipsis">
+    High level demonstration of IBM Cloud Satellite
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../4demo/04.03%20DeployDemo/" class="md-nav__link">
-        Satellite Config demonstration
+        
+  
+  <span class="md-ellipsis">
+    Satellite Config demonstration
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../4demo/04.04%20WatchDemo/" class="md-nav__link">
-        Watch a recorded demonstration example
+        
+  
+  <span class="md-ellipsis">
+    Watch a recorded demonstration example
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../../NextSteps/" class="md-nav__link">
-        Next Steps
+        
+  
+  <span class="md-ellipsis">
+    Next Steps
+  </span>
+  
+
       </a>
     </li>
   
@@ -587,38 +732,39 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<p>The first step to utilize IBM Cloud Satellite is to create a <strong>Location</strong>. A Location is a representation of an environment in a client's choice of infrastructure, such as an on-premises data center or public cloud. Below is a high-level architectural view of a Satellite Location.</p>
-<p><img alt="" src="../_attachments/Sat-LocationArchitecture.png" /></p>
+<div><p>The first step to utilize IBM Cloud Satellite is to create a <strong>Location</strong>. A Location is a representation of an environment in a client's choice of infrastructure, such as an on-premises data center or public cloud. Below is a high-level architectural view of a Satellite Location.</p>
+<p><img alt="" src="../_attachments/Sat-LocationArchitecture.png"></p>
 <p>Creating a Satellite Location can be achieved through the IBM Cloud Portal, via the IBM Cloud Satellite command line interfaces, or application programming interfaces (APIs). For other public cloud providers, IBM Cloud Satellite provides automation via <a href="https://cloud.ibm.com/docs/schematics?topic=schematics-about-schematics" target="_blank">IBM Cloud Schematics</a> to set up the Location. For on-premises deployments, scripts are provided that will need to be executed on each of the target host machines. Planning for the creation of a Location is critical. Detailed planning information is provided in the IBM Cloud Satellite documentation in the <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-infrastructure-plan" target="_blank">Planning your environment for Satellite</a> section.</p>
 <p>There are many requirements associated with creating a Satellite Location including minimum host requirements (operating system, CPU, memory, storage, etc.) and minimum network latency between Satellite Location hosts and IBM Cloud data centers. To learn more about Satellite Locations, refer to the Satellite Location product documentation: <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-locations" target="_blank">https://cloud.ibm.com/docs/satellite?topic=satellite-locations</a>.</p>
 <p>The image below is from the <a href="https://cloud.ibm.com/satellite/locations/create" target="_blank">IBM Cloud Portal</a>. There are tiles that provide a wizard-based creation process for 3rd party cloud providers as well as on-premises, edge, and advanced configurations. </p>
-<p><img alt="" src="../_attachments/Sat-CreateLocation.png" /></p>
+<p><img alt="" src="../_attachments/Sat-CreateLocation.png"></p>
 <h1 id="provisioning-a-location-in-3rd-party-cloud-provider">Provisioning a location in 3rd party cloud provider</h1>
 <div class="admonition reminder">
 <p class="admonition-title">Permission to perform these steps are not provided in the ITZ demonstration environment.</p>
 <p>The steps are detailed here to completeness. If users have their own AWS account, they can follow along; however, any charges incurred are the responsibility of the user. Users should stop before actually provisioning resources. </p>
 </div>
 <p>The Terraform-based creation wizards for 3rd party cloud providers first prompt users for credentials for the users account in the 3rd party cloud. An example is shown below for Amazon Web Services (AWS).</p>
-<p><img alt="" src="../_attachments/Sat-AWSCreateLocationCredentials.png" /></p>
+<p><img alt="" src="../_attachments/Sat-AWSCreateLocationCredentials.png"></p>
 <p>Once credentials are provided, prompts are provided for completing the required information to provision the Location. These include:</p>
 <ul>
 <li>The data center or region in the 3rd party provider where the Location should be created.</li>
 <li>The number and hardware configuration (CPU, Memory, Storage) of the virtual servers that will be provisioned for the location.</li>
-<li>And the IBM Cloud Object Storage bucket that will be used to store information about the Location. ofr </li>
+<li>And the IBM Cloud Object Storage bucket that will be used to store information about the Location. </li>
 </ul>
-<p><img alt="" src="../_attachments/Sat-AWSCreateLocationDetails.png" /></p>
+<p><img alt="" src="../_attachments/Sat-AWSCreateLocationDetails.png"></p>
 <p>The video below shows the provisioning of an IBM Cloud Satellite Location in AWS. The video has been edited to minimize the viewing time and does not reflect the actual provisioning time of a Satellite Location. The actual provisioning time (from clicking "Create location" to the Location being ready) will vary. When this video was created, it took approximately 25 minutes for the 12 hosts to be provisioned in AWS and configured as a Satellite Location.</p>
 <p>Watch this video to understand the talking points when describing the provisioning process. </p>
-<p><div class="video-container"><video style="position: relative; width: 100%; height: 22.172vw" controls  ><source src="../_videos/IBMCloudSatellite-Seller-L3-ProvisionLocation-final.mp4" type="video/mp4" /></video></div></p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" controls alt="type:video"><source src="../_videos/IBMCloudSatellite-Seller-L3-ProvisionLocation-final.mp4" type="video/mp4"></source></video></div></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If the video appears blurry, click the full screen <img alt="" src="../_attachments/FullScreenVideo.png" /> or <img alt="" src="../_attachments/FullScreenVideo3.png" /> icon.</p>
+<p>If the video appears blurry, click the full screen <img alt="" src="../_attachments/FullScreenVideo.png"> or <img alt="" src="../_attachments/FullScreenVideo3.png"> icon.</p>
 </div>
 <details class="tip">
 <summary>Don't like the green highlights in the video above?</summary>
@@ -637,13 +783,13 @@
 </ol>
 <p>A more detailed explanation of these steps can be found <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-location-host" target="_blank">here</a> in the product documentation.</p>
 <p>Watch this video to understand the talking points when describing the provisioning process. The video also covers provisioning a Satellite-enabled service which is the topic of the next chapter of this activity.</p>
-<p><div class="video-container"><video style="position: relative; width: 100%; height: 22.172vw" controls  ><source src="../_videos/ProvisionLocalSatLoc-final.mp4" type="video/mp4" /></video></div></p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" controls alt="type:video"><source src="../_videos/ProvisionLocalSatLoc-final.mp4" type="video/mp4"></source></video></div></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If the video appears blurry, click the full screen <img alt="" src="../_attachments/FullScreenVideo.png" /> or <img alt="" src="../_attachments/FullScreenVideo3.png" /> icon.</p>
+<p>If the video appears blurry, click the full screen <img alt="" src="../_attachments/FullScreenVideo.png"> or <img alt="" src="../_attachments/FullScreenVideo3.png"> icon.</p>
 </div>
 <h2 id="more-about-the-itz-environment-used-in-this-activity">More about the ITZ environment used in this activity</h2>
-<p>As mentioned earlier, this activity utilizes a shared, pre-provisioned IBM Cloud Satellite Location. The <strong>Satellite location</strong> is deployed on a set of VMware-based virtual servers that are actually running in a IBM Cloud for VMware vCenter Server (VCS) environment. This deployment model is only supported for testing purposes, however, it mimics one of the most common deployment models for IBM Cloud Satellite which is a set of VMware-based virtual machines running in a client's datacenter.</p>
+<p>As mentioned earlier, this activity utilizes a shared, pre-provisioned IBM Cloud Satellite Location. The <strong>Satellite location</strong> is deployed on a set of VMware-based virtual servers that are actually running in an IBM Cloud for VMware vCenter Server (VCS) environment. This deployment model is only supported for testing purposes, however, it mimics one of the most common deployment models for IBM Cloud Satellite which is a set of VMware-based virtual machines running in a client's datacenter.</p>
 <div class="admonition important">
 <p class="admonition-title">Before proceeding</p>
 <p>A reservation for the IBM Cloud Satellite Level 3 IBM Technology Zone (ITZ) environment must be available and in the <strong>Ready</strong> state before proceeding. Once requested, the reservation takes approximately 15 minutes to provision. Upon completion, an e-mail is sent and the reservation appears in the ready state on the <a href="https://techzone.ibm.com/my/reservations" target="_blank">ITZ My reservations</a> page. <strong>The information contained in the email and reservation detail page is required to proceed to the next section.</strong></p>
@@ -657,19 +803,19 @@
 <p>Once authenticated, change to the <strong>2435442 - ITZ - Satellite</strong>.</p>
 </li>
 </ol>
-<p><img alt="" src="../_attachments/CloudPortal-changeAccounts.png" /></p>
+<p><img alt="" src="../_attachments/CloudPortal-changeAccounts.png"></p>
 <details class="error">
 <summary>Don't see the 2435442 - ITZ - Satellite?</summary>
 <p>Verify the ITZ reservation is in the <strong>Ready</strong> state and the invitation to join the account has been accepted. Refer to the <strong>Create environment reservation</strong> chapter in the previous section of the demonstration guide.</p>
 </details>
 <ol start="3">
-<li>Navigate to the Satellite Location page by clicking the hamburger menu icon <img alt="" src="../_attachments/HamburgerMenu.png" /> at top left, selecting <strong>Satellite</strong> and then <strong>Locations</strong>.</li>
+<li>Navigate to the Satellite Location page by clicking the hamburger menu icon <img alt="" src="../_attachments/HamburgerMenu.png"> at top left, selecting <strong>Satellite</strong> and then <strong>Locations</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/CloudPortal-SatLocationsMenu.png" /></p>
+<p><img alt="" src="../_attachments/CloudPortal-SatLocationsMenu.png"></p>
 <ol start="4">
 <li>Locate and click on the <strong>yl-l3-vmware</strong> in the Locations table.</li>
 </ol>
-<p><img alt="" src="../_attachments/Sat-LocationsTable.png" /></p>
+<p><img alt="" src="../_attachments/Sat-LocationsTable.png"></p>
 <div class="admonition hint">
 <p class="admonition-title">Finding the correct location</p>
 <p>This ITZ cloud account is used by many different ITZ environments. If the <strong>yl-l3-vmware</strong> location is not visible in the table, use the table's search or sort feature to find it.</p>
@@ -677,68 +823,35 @@
 <ol start="5">
 <li>Explore the details of the Location including the <strong>Overview</strong> and <strong>Hosts</strong> views.</li>
 </ol>
-<p><img alt="" src="../_attachments/Sat-LocationDetails.png" /></p>
+<p><img alt="" src="../_attachments/Sat-LocationDetails.png"></p>
 <ol start="6">
 <li>On the <strong>Hosts</strong> page, click the <strong>Attach host +</strong> button.</li>
 </ol>
-<p><img alt="" src="../_attachments/Sat-LocationHosts.png" /></p>
+<p><img alt="" src="../_attachments/Sat-LocationHosts.png"></p>
 <p>Here is where administrators come to generate and download the shell script to add hosts to the location. This is done when provisioning the control plane as well as additional servers needed for cloud-enabled services. In this ITZ environment, users do NOT have permission to generate the script.</p>
 <p>If the audience is very technical and would like to see the script, <a href="../../4demo/_downloads/attachHost-yl-l3-empty-location/" target="_blank">here</a>.</p>
-<p>Continue to the next section to learn about IBM Cloud Satellite-enabled services.</p>
+<p>Continue to the next section to learn about IBM Cloud Satellite-enabled services.</p></div>
 
 
 
 
-              
-            </article>
-            
-          </div>
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </a>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../../1setup/01.03%20CreateReservation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create environment reservation" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Create environment reservation
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../02.02%20Services/" class="md-footer__link md-footer__link--next" aria-label="Next: Satellite-enabled services" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Satellite-enabled services
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -765,10 +878,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
