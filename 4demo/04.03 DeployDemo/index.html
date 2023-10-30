@@ -738,7 +738,7 @@
 <ul>
 <li>deploy the sample application to the <strong>Development</strong> cluster from the <strong>Development</strong> branch of the  GitHub repository</li>
 <li>deploy the sample application to the <strong>Production</strong> cluster from the <strong>Production</strong> branch of the  GitHub repository </li>
-<li>update the <strong>Production</strong> deployment of the application using the GitHub Development and Operations (DevOps) model by updating the <strong>Development</strong> branch in GitHub and initiating GigHub <strong>pull request</strong> of the <strong>Development</strong> branch to the <strong>Production</strong> branch</li>
+<li>update the <strong>Production</strong> deployment of the application using the GitHub Development and Operations (DevOps) model by updating the <strong>Development</strong> branch in GitHub and initiating GitHub <strong>pull request</strong> of the <strong>Development</strong> branch to the <strong>Production</strong> branch</li>
 </ul>
 <p>To achieve this, <strong>subscriptions</strong> need to be created for both the <strong>Development</strong> and <strong>Production</strong> branches to deploy the application to the respective OpenShift clusters.</p>
 <ol>
@@ -766,9 +766,10 @@
 <li>Enter the URL for <strong>your</strong> fork of the GitHub repository for the sample code. This is the URL recorded in step 28 in the <strong>Setup GitHub repository</strong> chapter.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-SubURL.png"></p>
-<p>??? question "Are private GitHub repositories supported?</p>
-<div class="highlight"><pre><span></span><code>Yes, private GitHub repositories are supported. Additional configuration steps are required to create a **secret** on the target cluster that contains a personal access token with at least **read** access to the private repository. Learn more &lt;a href="https://cloud.ibm.com/docs/satellite?topic=satellite-satcon-manage-gitops&amp;interface=ui#create-satconfig-ui-gitops" target="_blank"&gt;here&lt;/a&gt;.
-</code></pre></div>
+<details class="question">
+<summary>Are private GitHub repositories supported?</summary>
+<p>Yes, private GitHub repositories are supported. Additional configuration steps are required to create a <strong>secret</strong> on the target cluster that contains a personal access token with at least <strong>read</strong> access to the private repository. Learn more <a href="https://cloud.ibm.com/docs/satellite?topic=satellite-satcon-manage-gitops&amp;interface=ui#create-satconfig-ui-gitops" target="_blank">here</a>.</p>
+</details>
 <ol start="6">
 <li>Enter <strong>config-sample-dev</strong> in the <strong>Branch name</strong> text entry field.</li>
 <li>Enter <strong>deployments/*.yaml</strong> in the <strong>Path</strong> text entry field.</li>
@@ -779,13 +780,15 @@
 <li>Check the checkbox for the <strong>se-l3-development</strong> cluster group in the table of cluster groups.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-ClusterGroups.png"></p>
-<p>!!! hint "Enter <strong>se-l3</strong> in the search field to filter the <strong>Cluster Groups</strong> table. </p>
+<div class="admonition hint">
+<p class="admonition-title">Enter <strong>se-l3</strong> in the search field to filter the <strong>Cluster Groups</strong> table.</p>
+</div>
 <ol start="10">
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-CreateButton.png"></p>
 <ol start="11">
-<li>Before validating the application is deployed, repeat steps 4 through 10 to create a <strong>Subscription</strong> for the **config-sample-prod as shown below.</li>
+<li>Before validating the application is deployed, repeat steps 4 through 10 to create a <strong>Subscription</strong> for the <strong>config-sample-prod</strong> as shown below.</li>
 </ol>
 <p><img alt="" src="../_attachments/Sat-Configs-GitConf-ProdSub.png"></p>
 <p>Usually, in less than a minute, both subscriptions should show a <strong>Rollout status</strong> of <strong>deployed</strong> as shown below.</p>
@@ -887,7 +890,7 @@
 <p><img alt="" src="../_attachments/openShiftWC-SampleAppWebPage2.png"></p>
 <details class="error">
 <summary>Still seeing 1.1?</summary>
-<p>Make sure at least 5 minutes has passed from when the code was changed in GitHub. After 5 minutes, click the deployment route link in the OpenShift web console, or refresh the browser page where teh Hello World application is running.</p>
+<p>Make sure at least 5 minutes has passed from when the code was changed in GitHub. After 5 minutes, click the deployment route link in the OpenShift web console, or refresh the browser page where the Hello World application is running.</p>
 </details>
 <p>As part of the DevOps process, the next step after modifying and testing any changes made is to perform a <strong>pull request</strong> from the <strong>config-sample-dev</strong> to the <strong>config-sample-prod</strong>. Once the <strong>pull request</strong> is <strong>merged</strong> in GitHub, the <strong>Satellite config</strong> for the **se-l3-production cluster group will be processed. </p>
 <ol start="28">
@@ -936,7 +939,7 @@
 <p><img alt="" src="../_attachments/openShiftWC-SampleAppDevDeploymentDetails.png"></p>
 <p>Just as observed with the <strong>development</strong> copy of the sample application, the <strong>production</strong> copy will be updated. A new pod will be created and the old one will be removed. <strong>It may take a full 5 minutes before the update occurs.</strong></p>
 <ol start="39">
-<li>Click the route link <img alt="" src="../_attachments/openShiftWC-RouteLinkIcon.png"> icon to open the web page front end to the deployed application in the **yl-l3-vmware-roks-1 cluster.</li>
+<li>Click the route link <img alt="" src="../_attachments/openShiftWC-RouteLinkIcon.png"> icon to open the web page front end to the deployed application in the <strong>yl-l3-vmware-roks-1</strong> cluster.</li>
 </ol>
 <p><img alt="" src="../_attachments/openShiftWC-SampleAppDeployment.png"></p>
 <p>Notice the string displayed should reflect the change made from the edit of the <strong>2-helloworld-deployment.yaml</strong>.</p>
