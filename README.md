@@ -45,7 +45,7 @@ In the ITZ automation:
 View all the active configurations using the IBM Cloud portal (https://cloud.ibm.com/satellite/configuration). Enter "se-l3" in the search field for the table of configurations. If there are configs that are more than a few weeks old (longer than an ITZ reservation for this environment can exist), they can probably be removed. You will first need to remove any active subscriptions and then the configuration can be removed. The first part of the config name (e.g. from above *2700039nft*) is the users IBM ID that is associated with their cloud account. You may want to look at the existing users in the account and remove those accounts. The following script will list all the users in the account along with their IBM ID so they can easily be managed. I did not add the delete capability to this script since this environment doesn't tend to leave user IDs around.
 
 ```
-wget -O getActiveReservations.perl https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/listAllUsers.perl
+wget -O listAllUsers.perl https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3-Sales/main/tools/listAllUsers.perl
 
 perl listAllUsers.perl
 ```
