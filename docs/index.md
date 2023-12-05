@@ -28,7 +28,23 @@ Some content will be labeled as **Required for technical sales only**. However, 
 
     Note: most images and videos used in this demonstration guide were created in June 2023. There may be differences between these images and videos than the current IBM Cloud Portal, Red Hat OpenShift web console, and other user interfaces shown. Some recorded videos were recorded prior to June 2023.
 
-## Helpful tips for using this demonstration environment
+## Support
+
+Think something is down? Check the applicable status pages for current updates:
+
+-  <a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a>
+-  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
+
+For issues with provisioning or accessing an environment in IBM Technology Zone (ITZ) open a ticket with ITZ support:
+- Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a>
+- E-mail: <a href="mailto:techzone.help@ibm.com" target="_blank">techzone.help.ibm.com</a>
+
+For issues related to specific steps found in the demonstration guide after the ITZ environment is provisioned, contact the authors:
+
+- Slack: <a href="{{supportSlack.url}}" target="_blank">{{supportSlack.name}}</a> - IBM only
+- E-mail: <a href="{{supportEmail}}" target="_blank">{{supportEmail}}</a>
+
+## Using the demonstration guide
 
 Throughout the lab, you will see images that are examples of what you should be seeing in the IBM Cloud Portal, Red Hat OpenShift web console, and other web pages and tools used in this guide. The following styles of highlighting is used:
 
